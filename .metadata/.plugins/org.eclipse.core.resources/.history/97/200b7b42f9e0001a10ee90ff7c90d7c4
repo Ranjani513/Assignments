@@ -1,0 +1,16 @@
+package com.nisum;
+
+public class A2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String res="";
+		 for(int i=0;i<args.length;i++)
+	       {
+			 StringBuffer sb=new StringBuffer(args[i]);
+	    	   res=res+sb.reverse()+" ";
+	       }
+	       System.out.println(res.trim());
+	}
+
+}
