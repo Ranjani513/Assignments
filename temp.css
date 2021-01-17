@@ -1,0 +1,299 @@
+* {box-sizing: border-box;}
+
+body {
+  margin: 0;
+
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: black;
+  margin-left:100px;
+  margin-right:100px;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: rgb(200,0,0);
+  
+}
+
+.topnav a.active {
+  background-color:rgb(200,0,0);
+  color: white;
+}
+
+.topnav .search-container {
+  float: right;
+}
+
+.topnav input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+.topnav .search-container button {
+  float: right;
+  height:32px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 25px;
+  border: none;
+  cursor: pointer;
+}
+
+.topnav .search-container button:hover {
+  background: #ccc;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav .search-container {
+    float: none;
+  }
+  .topnav a, .topnav input[type=text], .topnav .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .topnav input[type=text] {
+    border: 1px solid #ccc;  
+  }
+}  
+.vertical{
+  border-left:1px solid black;
+  height:50px;
+}
+li{
+  display:inline;
+}
+ul{
+  list-style-type: none;
+ display:inline-block;
+  float:right;clear:right;padding-top:20px;padding-right:110px;color:grey
+}
+.fa {
+  padding: 10px;
+  font-size: 15px;
+  width: 10px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: white;
+  color: red;
+}
+.fa-twitter {
+  background: white;
+  color: red;
+}
+.fa-skype {
+  background: white;
+  color: red;
+}
+.fa-dribbble {
+  background: white;
+  color: red;
+}
+.fa-linkedin
+{
+  background: white;
+  color: red;
+}
+
+
+.act{
+	background-color:rgb(200,0,0);
+	}
+p.pseudoE::first-letter
+{
+	background-color:rgb(200,0,0); 
+	font-family:serif;
+	padding-left:3px;
+	padding-right:3px;
+	
+}
+.displayheader{
+   display:"inline-block";
+   float:right;
+  
+   
+}
+.clearfix{
+	overflow:auto;
+}
+table, th, td {
+  border: 1px solid rgb(0,0,0,0.2);
+  border-collapse: collapse;
+  padding:10px;
+  text-align:left;
+  margin-left:0px;
+
+}
+td{
+	color:grey;
+	font-size:10px;
+}
+
+th{
+	background-color:rgb(200,0,0);
+	color:black;
+	
+}
+table p {
+    display:list-item;
+    list-style:disc inside;
+    padding:0 0 0 5px;
+    margin:0;
+    text-align:left;
+    float:left;
+    clear:left;
+}
+* {
+  box-sizing: border-box;
+}
+div.gallery {
+  margin: 2px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 300px;
+
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+hr.b{
+	border: 0.5px solid red;
+	margin:0;
+}
+hr.c
+{
+	border: 0.5px solid lightgrey;
+	margin:0;
+}
+p.hi{
+	line-height:2;
+	list-style-type:none;
+
+}
+.h:after {
+color:red;
+    content: ' \25B8';
+}
+.l1:after {
+    content: ' \25BC';
+    font-size:15px;
+    color:rgb(200,0,0);
+}
+p.products{
+  border:1px solid lightgrey;
+  margin-left:100px;
+  width:1215px;
+  height:40px;
+  padding:10px;
+  float:left;
+  }
+p.clearance1{
+  
+    color:rgb(200,0,0);
+    font-size:30px;
+    padding-left:10px;
+    margin:0px;
+   padding-top:10px;
+}
+p.clearance2{
+  
+    color:rgb(200,0,0);
+    font-size:90px;
+    padding-left:10px;
+    margin:0px;
+}
+.button1{
+  background-color:rgb(200,0,0);
+  color:white;width:100px;
+  height:30px;
+  cursor:pointer;
+  margin-left:10px;
+}
+.main{
+  border :1px solid black;
+  margin:50px;
+  height:2000px;
+  }
+  .clearanceborder
+  {
+    border:1px solid lightgrey;
+    position:absolute;
+    top:7px;
+    float:right;
+    clear:right;
+    margin-left:200px;
+    width:940px;
+    height:420.5px;
+    font-family:Arial;
+    margin-top:0px;
+  }
+  .mainimg{
+    width:300px;
+    height:300px;
+    margin-left:370px;
+    position:absolute;
+    top:0px;
+    transform:scaleX(2);padding-top:5px;
+  }
+  .footerhead
+  {
+    border:1px solid lightgrey;
+   
+  }
+.footerinside
+{
+  color:#0000CD;padding:10px;font-size:15px;
+}
+.descbutton{
+  background-color:rgb(200,0,0);
+  padding:4px;
+  color:white;
+  top:0;
+  width:120px;
+  height:40px;
+}
+.footerborder
+{
+  border:1px solid lightgrey;
+width:80%;
+margin-left:100px;
+column-count:2;
+column-gap:20px;
+}

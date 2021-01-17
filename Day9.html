@@ -1,0 +1,75 @@
+<!DOCTYPE html> 
+<html> 
+    <head> 
+        <title> 
+            Create a Form  
+        </title> 
+    </head> 
+    <body style="text-align: center;background-color:pink; "> 
+        
+        <p> 
+          Click on the button to create 
+          a form  
+        </p> 
+        <button onClick="click1()"> 
+            click here 
+        </button> 
+        <p id="breakk"></p> 
+ <script> 
+    var down = document.getElementById("breakk"); 
+            
+    
+    var br = document.createElement("br");  
+    function click1()
+     {  
+    var form = document.createElement("form"); 
+    form.setAttribute("method", "post");  
+    
+    var Name = document.createElement("input"); 
+     Name.setAttribute("type", "text"); 
+      Name.setAttribute("name", "Name"); 
+     Name.setAttribute("placeholder", "Name"); 
+  
+    
+     // Create an input element for emailID 
+     var EmailID = document.createElement("input"); 
+     EmailID .setAttribute("type", "text"); 
+     EmailID .setAttribute("name", "emailID"); 
+     EmailID .setAttribute("placeholder", "EMail ID"); 
+  
+      // Create an input element for password 
+      var PWD = document.createElement("input"); 
+      PWD.setAttribute("type", "password"); 
+      PWD.setAttribute("name", "password"); 
+      PWD.setAttribute("placeholder", "Password"); 
+  
+       
+  
+               
+                var s = document.createElement("input"); 
+                s.setAttribute("type", "submit"); 
+                s.setAttribute("value", "Submit"); 
+                  
+               
+                form.appendChild(Name);  
+                
+                form.appendChild(br.cloneNode());  
+                  
+                
+                form.appendChild(EmailID);  
+                form.appendChild(br.cloneNode());  
+                   
+                form.appendChild(PWD);  
+                form.appendChild(br.cloneNode());  
+                  
+                
+                  
+             
+                form.appendChild(s);  
+  
+                document.getElementsByTagName("body")[0] 
+               .appendChild(form); 
+            } 
+        </script> 
+    </body> 
+</html> 

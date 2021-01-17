@@ -1,0 +1,60 @@
+<!DOCTYPE html> 
+<html> 
+    <head> 
+        <title> 
+             Form  
+        </title> 
+    </head> 
+    <body style="text-align: center;"> 
+    
+ <script> 
+   
+                
+   
+    var form = document.createElement("form"); 
+    form.setAttribute("method", "post"); 
+    form.setAttribute("action", "profile.html"); 
+   
+    var firstname = document.createElement("input"); 
+    firstname.setAttribute("type", "text"); 
+    firstname.setAttribute("name", "firstName"); 
+    firstname.setAttribute("placeholder", "first Name"); 
+  
+     var Email = document.createElement("input"); 
+     Email.setAttribute("type", "text"); 
+     Email.setAttribute("name", "emailID"); 
+     Email.setAttribute("placeholder", "EMail ID"); 
+
+      var password = document.createElement("input"); 
+      password.setAttribute("type", "password"); 
+      password.setAttribute("name", "password"); 
+      password.setAttribute("placeholder", "Password"); 
+  
+
+  
+                
+                var s = document.createElement("input"); 
+                s.setAttribute("type", "submit"); 
+                s.setAttribute("value", "Submit"); 
+                  
+                
+                form.appendChild(firstname);  
+                  
+                form.appendChild(br.cloneNode());  
+                 
+                form.appendChild(Email);  
+                form.appendChild(br.cloneNode());  
+          
+                form.appendChild(password);  
+                form.appendChild(br.cloneNode());  
+                  
+                  
+                
+                form.appendChild(s);  
+  
+                document.getElementsByTagName("body")[0] 
+               .appendChild(form); 
+            
+        </script> 
+    </body> 
+</html> 
