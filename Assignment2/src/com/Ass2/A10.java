@@ -11,7 +11,7 @@ public class A10 {
 public static void main(String[] args)
 {
 	Scanner sc=new Scanner(System.in);
-	System.out.println("Enter the username:");
+	System.out.println("Enter the username1:");
 	String uname=sc.nextLine();
 	System.out.println("Enter the password");
 	String pword=sc.nextLine();
