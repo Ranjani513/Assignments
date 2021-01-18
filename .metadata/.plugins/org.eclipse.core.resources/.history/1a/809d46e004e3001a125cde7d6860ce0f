@@ -1,0 +1,49 @@
+//3) Write a program to create multiple 'Item' objects which has variables like itemName,itemValue and itemId. Validate the values of these variables and build an order summary with
+//itemsCount and orderTotal within the 'Cart' class.
+
+
+package com.Ass2;
+
+import java.util.Scanner;
+
+public class Cart {
+int itemvalue;
+int itemid;
+String itemname;
+int res=0;
+ static int count;
+static int totalorders=0;
+Cart(int itemvalue,int itemid,String itemname ,int count)
+{
+	this.itemvalue=itemvalue;
+	this.itemid=itemid;
+	this.itemname=itemname;
+	this.count=count;
+}
+public  void getdetails() {
+
+System.out.println();
+}
+public static void main(String args[])
+{
+	Scanner sc=new Scanner(System.in);
+	System.out.println("Enter the any itemid from 1 to 3:");
+	int itemid=sc.nextInt();
+	System.out.println("Enter the count of the first items");
+	count=sc.nextInt();
+	Cart c=new Cart(5,itemid,"biscuits",count);
+	System.out.println("Enter the count of the second items");
+	count=sc.nextInt();
+	Cart c1=new Cart(6,itemid,"choclates",count);
+	System.out.println("Enter the count of the third  items");
+	count=sc.nextInt();
+	
+	Cart c2=new Cart(7,itemid,"sweets",count);
+	
+	c.getdetails();
+	c1.getdetails();
+	c2.getdetails();
+	System.out.println("Totalorders:"+totalorders);
+	
+}
+}

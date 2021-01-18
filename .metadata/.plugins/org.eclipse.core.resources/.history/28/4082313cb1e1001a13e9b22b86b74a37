@@ -1,0 +1,35 @@
+//6) write a program to showcase the static members and their behaviors with class instances?
+
+
+package com.Ass2;
+import java.util.*;
+public class Staticex {
+int count1;
+ static int count2;
+ int count;
+ public void test(int count)
+ {
+	 this.count=count;
+	 count1=count;
+	 count2=count;
+	// this.count2=count2;
+	 System.out.println("instance variable count"+(count1=count1+1)+"\n"+"static variable count"+(count2=count2+1));
+ }
+ public static void main(String args[])
+ {
+	 Scanner sc=new Scanner(System.in);
+	 System.out.println("Enter the initial value of count:");
+	 int count=sc.nextInt();
+	 Staticex se=new Staticex();
+	 se.test(count);
+	 Staticex se1=new Staticex();
+	 se.test(count);
+	 Staticex se2=new Staticex();
+	 se2.test(count);
+	 Staticex se3=new Staticex();
+	 se3.test(count);
+	 
+	 
+ }
+ 
+}

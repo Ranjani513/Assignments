@@ -1,0 +1,36 @@
+package com.Ass2;
+
+import java.util.Scanner;
+
+public class Staticstu {
+	String name;
+	String Address;
+	String Section;
+	static int roll_no;
+	static String college;
+
+	public void display(String name,String Address,String Section,int roll_no,String college)
+	{
+		this.name=name;
+		this.Address=Address;
+		this.Section=Section;
+		this.roll_no=roll_no;
+		this.college=college;
+		System.out.println("Name:"+name+" \n"+"Address:"+Address+"\n "+"Section:"+Section+"\n "+"rollno:"+roll_no+" \n"+"College:"+college);
+	}
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the name:");
+        String name=sc.nextLine();
+        System.out.println("Enter the Address:");
+        String Address=sc.nextLine();
+        System.out.println("Enter the Section:");
+        String Section=sc.nextLine();
+        System.out.println("Enter the Roll_no:");
+ int roll_no=sc.nextInt();
+ System.out.println("Enter the college:");
+ String college=sc.nextLine();
+Staticstu st=new Staticstu();
+st.display(name, Address, Section, roll_no,college);
+}
+}
