@@ -19,13 +19,13 @@ var a="hello";
 f1();
 function f1()
 {
-    var b="hi";
+    var d="hi";
     f2();
 
 function f2()
 {
     var c="how are u";
-    console.log(a+' '+b+' '+c);
+    console.log(a+' '+d+' '+c);
     f3();
 }
 }
