@@ -1,5 +1,7 @@
  
-/*console.log('Hello world');
+/*
+All concepts
+console.log('Hello world');
 function cal(year)
 {
     return(2018-year);
