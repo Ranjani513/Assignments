@@ -1,4 +1,4 @@
-//11)Java Program to Check Whether a Static Method Can Access the Instance Variable
+//11)Java Program to Check Whether a Static Method Can Access the Instance Variable jkk
 
 
 package com.Ass2;
