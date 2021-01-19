@@ -1,4 +1,4 @@
-//12)Static block and static method : write program to illustrate which one executes first?
+//12)Static block and static method : write program to illustrate which one executes first?ASA
 package com.Ass2;
 
 import java.util.Scanner;
