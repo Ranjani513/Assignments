@@ -1,0 +1,12 @@
+package com.nisum.main;
+
+import java.util.Comparator;
+import java.util.List;
+import java.util.Optional;
+
+public class A1 {
+public Optional<Integer> max1(List<Integer> l)
+{
+	return l.stream().max(Comparator.comparing(Integer::valueOf));
+}
+}

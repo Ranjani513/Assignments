@@ -1,0 +1,19 @@
+package com.nisum.servlet;
+
+import java.util.ArrayList;
+import java.util.List;
+
+
+public class RetriveStudentdetails {
+	public void getdetails(){
+List<StudentDetails> studetails=new ArrayList<>();
+studetails.add(new StudentDetails("Ranjani","101"));
+studetails.add(new StudentDetails("Nikhila","102"));
+studetails.add(new StudentDetails("Divya","103"));
+studetails.add(new StudentDetails("Ramya","104"));
+for(StudentDetails stu:studetails)
+{
+	System.out.println("Name:"+stu.getname()+"\n"+"Id:"+stu.getid());
+}
+}
+}

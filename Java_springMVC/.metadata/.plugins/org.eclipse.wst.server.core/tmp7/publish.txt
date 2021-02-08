@@ -1,0 +1,5 @@
+#Tomcat publish data
+#Sat Oct 10 08:21:02 IST 2020
+org.eclipse.jst.jee.server\:/binary\:C\:\\Users\\bragaranjani\\.m2\\repository\\org\\springframework\\spring-web\\4.3.9.RELEASE\\spring-web-4.3.9.RELEASE.jar=WEB-INF/lib/spring-web-4.3.9.RELEASE.jar
+org.eclipse.jst.jee.server\:/binary\:C\:\\Users\\bragaranjani\\.m2\\repository\\org\\springframework\\spring-web\\4.0.3.RELEASE\\spring-web-4.0.3.RELEASE.jar=WEB-INF/lib/spring-web-4.0.3.RELEASE.jar
+org.eclipse.jst.jee.server\:/binary\:C\:\\Users\\bragaranjani\\.m2\\repository\\org\\springframework\\spring-web\\5.2.3.RELEASE\\spring-web-5.2.3.RELEASE.jar=WEB-INF/lib/spring-web-5.2.3.RELEASE.jar

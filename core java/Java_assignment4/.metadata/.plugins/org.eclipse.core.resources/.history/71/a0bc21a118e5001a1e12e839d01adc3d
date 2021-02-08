@@ -1,0 +1,55 @@
+/*1. Iterate list of order objects using Iterator and remove the orders of status "PENDING".
+
+	order [ "O345" , "COMPLETED" ]
+	order [ "O456" , "COMPLETED" ]
+	order [ "O789" , "IN-TRNASIT" ]
+	order [ "O346" , "PENDING" ]
+	order [ "O347" , "PENDING" ]
+	order [ "O348" , "CANCELLED" ]
+	order [ "O678" , "PENDING" ]
+
+2. Iterate above list of order objects using foreach find out if this list has any "PENDING" order and if it finds then make sure the next orders are not verified.
+*/
+package Ass4;
+
+import java.util.ArrayList;
+
+public class Order1 {
+	String id;
+	String status;
+	static ArrayList<Order> a=new ArrayList<>();
+	Order1(String id,String status)
+	{
+		this.id=id;
+		this.status=status;
+	}
+	public String toString()
+	{
+		return "["+id+","+status+"]";
+	}
+	public static  void filter(ArrayList<Order1> al)
+	{
+		for(Order1 o:al)
+		{
+			if((o.status).equals("PENDING"))
+			{
+				al.remove(o);
+			}
+		}
+	}
+
+	public static void main(String[] args)
+	{
+		ArrayList<Order> a=new ArrayList<>();
+
+	a.add(new	Order ( "O345" , "COMPLETED" ));
+	a.add(new Order( "O456" , "COMPLETED" ));
+	a.add(new Order("O789" , "IN-TRNASIT" ));
+	a.add(new Order( "O346" , "PENDING" ));
+	a.add(new Order("O347" , "PENDING" ));
+	a.add(new Order( "O348" , "CANCELLED" ));
+	a.add(new Order( "O678" , "PENDING" ));
+	Order.filter(a);
+	}
+
+}

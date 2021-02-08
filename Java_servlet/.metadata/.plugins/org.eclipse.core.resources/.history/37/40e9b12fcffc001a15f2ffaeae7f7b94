@@ -1,0 +1,6 @@
+package com.constants;
+
+public class Constants {
+public static final name1="Ranjani";
+public static final pass1="pass";
+}

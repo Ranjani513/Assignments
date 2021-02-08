@@ -1,0 +1,51 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+    
+    <%@page import="java.util.ArrayList"%> 
+    <%@page import=" com.servlet.RetriveStudentdetails"%>    
+    <%@page import=" com.servlet.StudentDetails"%>  
+    <%@page import="java.util.Iterator"%> 
+      
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>StudentDetailsDisplaying</title>
+</head>
+<body>
+<% ArrayList<StudentDetails> studentList = (ArrayList<StudentDetails>) request.getAttribute("stulist"); %> 
+<strong><a href="<%=request.getContextPath()%>/Studentdetailsservlet?type=getdetails">List Of Students</a></strong>
+<br></br>
+<table>
+<%
+if(request.getAttribute("stulist") != null)  
+{
+	Iterator<StudentDetails> iterator = studentList.iterator();  
+	
+	while(iterator.hasNext())  
+	{
+		StudentDetails stuDetails = iterator.next(); 
+	%>	
+	<tr>
+		<td><%=stuDetails.getname()%></td>
+		<td><a href="<%=request.getContextPath()%>/VerifyId?type=<%=stuDetails.getid()%>"><%=stuDetails.getid()%></a></td>
+		<%String id=request.getParameter("type"); %>	
+	</tr>
+	<%
+	}
+}
+%>
+</table>
+<table>
+<%
+if(request.getAttribute("studentd") != null) 
+{
+StudentDetails studentd = (StudentDetails)request.getAttribute("studentd");%>
+	<tr><td>Student Name</td><td><%=studentd.getname()%></td></tr>
+	<tr><td>Student Id</td><td><%=studentd.getid()%></td></tr>
+	
+	<%} %>
+</table>
+
+</body>
+</html>

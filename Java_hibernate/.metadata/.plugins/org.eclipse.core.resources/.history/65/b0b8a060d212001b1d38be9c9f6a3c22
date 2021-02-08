@@ -1,0 +1,5 @@
+package com.nisum.SpringbootHibernateManyToManyAnnotation.repository;
+
+public class TagRepository {
+
+}

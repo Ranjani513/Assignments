@@ -1,0 +1,5 @@
+package com.nisum.onetoone.repository;
+
+public interface UserProfileRepository {
+
+}

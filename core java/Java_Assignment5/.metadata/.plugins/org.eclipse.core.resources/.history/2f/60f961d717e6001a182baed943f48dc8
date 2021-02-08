@@ -1,0 +1,9 @@
+// 15) Prepare program to convert inputstream to reader or BufferedReader
+public class A15 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

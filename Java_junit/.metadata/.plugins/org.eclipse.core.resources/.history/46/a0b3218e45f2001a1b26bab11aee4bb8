@@ -1,0 +1,21 @@
+package com.nisum.main;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.LinkedHashSet;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Set;
+import java.util.stream.Collectors;
+
+public class A5 {
+
+
+public Set<String> duplicate(List<String> l) {
+	// TODO Auto-generated method stub
+	///LinkedHashSet<String> le=null;
+	Set<String> s=new LinkedHashSet(Arrays.asList(l));
+	Set<String> li= l.stream().filter(n->n!=null).collect(Collectors.toSet());
+	return li;
+}
+}

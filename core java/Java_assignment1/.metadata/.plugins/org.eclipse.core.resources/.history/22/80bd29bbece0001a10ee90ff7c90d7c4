@@ -1,0 +1,45 @@
+package com.nisum;
+
+public class A25 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int count=0,rem=0,sum=0,c;
+		int n=150;
+   outer:
+	   while(n>10) {
+		  c=n;
+		 
+		   inner:
+			   
+			   while(n!=0)
+			   {
+				   rem=n%10;
+				   sum=sum*10+(rem*rem*rem);
+				   n/=10;
+			   }
+			   
+		  if(count<=10) {
+			  System.out.println(sum);
+			  
+			 		  if(c==sum)
+		  {
+			        count++;
+			        System.out.println(c);
+			        
+		  }
+		 
+		  
+	   }
+		  else
+		  {
+			  break outer;
+		  }
+		  c++;
+		  n=c;
+		  
+	       //System.out.println(n);
+	   }
+	}
+
+}

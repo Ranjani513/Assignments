@@ -1,0 +1,16 @@
+//34. Write a Program to get the No Such method exception.
+package Ass4;
+
+public class A34 {
+ 
+	/*public void hi()
+	{
+		System.out.println("hi");
+	}*/
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+A34 a=new A34();
+a.hi();
+	}
+
+}

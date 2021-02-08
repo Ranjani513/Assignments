@@ -1,0 +1,11 @@
+package com.nisum.main;
+
+public class Address {
+String pincode;
+String area;
+
+	public Address() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

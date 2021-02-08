@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Login Form</title>
+</head>
+<body>
+<form>
+<table>
+<tr><td><b>UserName</b><input type=text name=name></td></tr>
+<tr><td><b>Password</b><input type=password name=psw><br><br></td></tr>
+<tr><td align="center",rowspan="5"><input type=Submit Value=Login></td></tr>
+</form>
+</table>
+</body>
+</html>

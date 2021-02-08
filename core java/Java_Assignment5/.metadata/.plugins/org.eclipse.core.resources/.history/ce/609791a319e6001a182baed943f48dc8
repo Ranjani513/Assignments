@@ -1,0 +1,9 @@
+// 17) how to get the size of a given file in bytes, kilobytes, and megabytes?
+public class A17 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

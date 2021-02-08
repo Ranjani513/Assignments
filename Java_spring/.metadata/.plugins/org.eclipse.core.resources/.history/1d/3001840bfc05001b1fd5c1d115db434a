@@ -1,0 +1,25 @@
+<html>
+<head>
+<link href="${pageContext.request.contextPath}/resources/css/main.css"
+    rel="stylesheet">
+<script src="${pageContext.request.contextPath}/resources/js/sample.js"></script>
+</head>
+
+<body>
+    <h2>Hi this style is defined in css file</h2>
+ 
+    <P>The time on the server is ${serverTime}.</P>
+ 
+    <br>
+    <br>
+ 
+    <img
+        src="${pageContext.request.contextPath}/resources/images/flower.png" />
+ 
+    <br>
+    <br>
+ 
+    <input type="button" onclick="doSomeWork()" value="Click Me" />
+ 
+</body>
+</html>

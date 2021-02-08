@@ -1,0 +1,5 @@
+package com.nisum.main;
+
+public interface AddressService {
+
+}

@@ -1,0 +1,19 @@
+import java.io.File;
+
+// 10) Java program to traverse all files of a directory/folder
+public class A10 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		File[] files = new File("C:/").listFiles();
+	    showFiles(files);
+	}
+
+	public static void showFiles(File[] files) {
+	    for (File file : files) {
+	    	 System.out.println("File: " + file.getName());
+	    }
+	}
+	}
+
+

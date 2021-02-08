@@ -1,0 +1,9 @@
+// 16) how to get (determine) the number of bytes written to a file using DataOutputStream
+public class A16 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

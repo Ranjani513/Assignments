@@ -1,0 +1,19 @@
+/*11. Write a java program with below conditions   
+
+     --Should have 2 threads
+
+    ---use collections update operations
+
+    ---use a synchronized block*/
+public class A11 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
+class Thread1 extends Thread
+{
+	
+}

@@ -1,0 +1,44 @@
+package com.Assignment4;
+
+import java.util.Iterator;
+import java.util.List;
+
+public class ContactBOSI {
+	private String firstName;
+	private String lastName;
+	private List<AddressBOSI> addressBOs;
+	public void setfirstname(String firstName)
+	{
+		this.firstName=firstName;
+	}
+	public void setlastname(String lastName)
+	{
+		this.lastName=lastName;
+	}
+	public void setaddressbo(List<AddressBOSI> addressBOs)
+	{
+		this. addressBOs= addressBOs;
+	}
+	public String getfirstname()
+	{
+		return firstName;
+	}
+	public String getlastname()
+	{
+		return lastName;
+	}
+	public List<AddressBOSI> getAddressBO()
+	{
+		return addressBOs;
+	}
+	public void displaycontact()
+	{
+		System.out.println("FirstName:"+firstName+"\t"+"LastName:"+lastName);
+		Iterator<AddressBOSI> it=addressBOs.iterator();
+		while(it.hasNext())
+		{
+			System.out.println("Address:"+it.next());
+		}
+	}
+
+}

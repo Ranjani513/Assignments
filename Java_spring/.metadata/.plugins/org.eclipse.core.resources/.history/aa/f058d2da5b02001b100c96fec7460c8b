@@ -1,0 +1,33 @@
+package com.Assignment4;
+
+public class AddressBOSI {
+	private String addressLine1;
+	private String addressLine2;
+	private Long zipCode;
+	private Long phoneNum;
+	private String state;
+	public void setaddressline1(String addressLine1)
+	{
+		this.addressLine1=addressLine1;
+	}
+	public void setaddressline2(String addressLine2)
+	{
+		this.addressLine2=addressLine2;
+	}
+	public void setzipcode(Long zipCode)
+	{
+		this.zipCode=zipCode;
+	}
+	public void setphonenumber(Long phoneNum)
+	{
+		this.phoneNum=phoneNum;
+	}
+	public void setstate(String state)
+	{
+		this.state=state;
+	}
+	public String toString()
+	{
+		return "Addressline1:"+addressLine1+"\t"+"AddressLine2:"+addressLine2+"\t"+"Zipcode:"+zipCode+"\t"+"State:"+state;
+	}
+}

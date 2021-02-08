@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans  
+    xmlns="http://www.springframework.org/schema/beans"  
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+    xmlns:p="http://www.springframework.org/schema/p"  
+    xsi:schemaLocation="http://www.springframework.org/schema/beans  
+               http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">  
+               <bean id="address1" class="com.Assignment4.AddressBOSI">
+              
+               <property name="addressLine1" value="sakhinetipalli"></property>
+               <property name="addressLine2" value="EastGodavari"></property>
+               <property name="zipCode" value="533250"></property>
+               <property name="phoneNum" value="9000544567"></property>
+               <property name="state" value="Andhrapradesh"></property>
+               </bean>
+               <bean id="address2" class="com.Assignment4.AddressBOSI">
+               <property name="addressLine1" value="Nirmal"></property>
+               <property name="addressLine2" value="Adilabad"></property>
+               <property name="zipCode" value="532341"></property>
+               <property name="phoneNum" value="639475623"></property>
+               <property name="state" value="Telangana"></property>
+               </bean>
+               <bean id="iteambo1" class="com.Assignment4.ItemBOSI">
+               <property name="itemCode" value="123"></property>
+               <property name="itemName" value="Choclates"></property>
+               <property name="price" value="20"></property>
+               
+               </bean>
+                              <bean id="iteambo2" class="com.Assignment4.ItemBOSI">
+               <property name="itemCode" value="121"></property>
+               <property name="itemName" value="Biscuits"></property>
+               <property name="price" value="10"></property>
+               
+               </bean>
+                              <bean id="contact1" class="com.Assignment4.ContactBOSI">
+               <property name="firstName" value="Raga"></property>
+               <property name="lastName" value="ranjani"></property>
+               <property name="contact1">
+               <list>
+               <ref bean="address1"/>
+               <ref bean="address2"/>
+               </list>
+               </property>
+               
+               </bean>
+               <bean id="shipmentbo" class="com.Assignment4.ShipmentBO">
+               <property name="shipmentId" value="4231"></property>
+               <property name="contact1" >
+               <ref bean="contact1"/>
+               </property>
+               <property name="itembo" >
+               <list>
+               <ref bean="iteambo1"/>
+               <ref bean="iteambo2"/>
+               </list>
+               </property>
+               <property name="addressbo" >
+               <list>
+               <ref bean="address1"/>
+               <ref bean="address2"/>
+               </list>
+               </property>
+                <property name="shipmentStatus" value="90%"></property>
+               </bean>
+               
+               
+               </beans>

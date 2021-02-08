@@ -1,0 +1,35 @@
+package com.Assignment4;
+
+public class ItemBOSI {
+	private int itemCode;
+	private String itemName;
+	private Double price;
+public void setitemcode(int itemCode)
+{
+	this.itemCode=itemCode;
+}
+public void setitemname(String itemName)
+{
+	this.itemName=itemName;
+}
+public void setprice(Double price)
+{
+	this.price=price;
+}
+public int getitemcode()
+{
+	return itemCode;
+}
+public String getitemname()
+{
+	return itemName;
+}
+public Double getprice()
+{
+	return price;
+}
+public String toString()
+{
+	return"itemcode:"+itemCode+"\n"+"ItemName:"+itemName+"\n"+"Price:"+price;
+}
+}

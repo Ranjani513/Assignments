@@ -1,0 +1,91 @@
+/*Assignment 8:
+
+1. Write a method which takes list of Order objects and return sum of prices of all orders. 
+	[ id, price ] using for loop.
+2. Write a method which takes list of Order objects and return average of last three orders prices. 
+	[ id, price ].
+3. Write a method which takes list of Order objects should return order with max price.
+
+
+
+*/
+package Ass4;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+
+public class Order2 {
+	String id;
+	double price;
+	static double sum=0;
+	static int count=0;
+	static ArrayList<Order2> a=new ArrayList<>();
+	Order2(String id,double price)
+	{
+		this.id=id;
+		this.price=price;
+	}
+	
+	public Order2(Order2 u) {
+		// TODO Auto-generated constructor stub
+	}
+
+	public String toString()
+	{
+		return "["+id+","+price+"]";
+	}
+	public static void verify(ArrayList<Order2> a)
+	{
+		Iterator<Order2> it=a.iterator();
+		while(it.hasNext())
+		{
+			Order2 u=it.next();
+			sum=sum+u.price;
+			
+			
+		}
+	}
+public static  void avg(ArrayList<Order2> a)
+	{
+	int l=a.size();
+	count=l-3;
+	int c=0;
+		Iterator<Order2> it=a.iterator();
+	
+		while(it.hasNext())
+		{
+			Order2 u=it.next();
+			if(count>count-2) {
+			/*for(int i=count-1;i<l;i++) {
+				System.out.println(u.price);
+			}*/
+			
+			
+			System.out.println(u);
+		}
+		
+	}
+	}
+
+	public static void main(String[] args)
+	{
+		ArrayList<Order2> a=new ArrayList<>();
+
+	a.add(new	Order2 ( "O345" , 23 ));
+	a.add(new Order2( "O456" , 24 ));
+	a.add(new Order2("O789" , 25 ));
+	a.add(new Order2( "O346" , 26 ));
+	a.add(new Order2("O347" , 27 ));
+	a.add(new Order2( "O348" , 28 ));
+	a.add(new Order2( "O678" , 89 ));
+	//Order2.verify(a);
+	//System.out.println("total price:"+sum);
+	Order2.avg(a);
+	
+	/*for(Order2 f:a)
+	{
+		System.out.println(f);
+	}*/
+	}
+
+}

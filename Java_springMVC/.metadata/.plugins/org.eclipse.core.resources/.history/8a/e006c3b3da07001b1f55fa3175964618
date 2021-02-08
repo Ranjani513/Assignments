@@ -1,0 +1,16 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Welcome page</title>
+</head>
+<body>
+<link href="${pageContext.request.contextPath}/resources/css/main.css"
+    rel="stylesheet">
+<h3>Hello ${user.name} </h3>
+<img
+        src="${pageContext.request.contextPath}/resources/images/star1.jpg" width="150" height="150"/>
+</body>
+</html>

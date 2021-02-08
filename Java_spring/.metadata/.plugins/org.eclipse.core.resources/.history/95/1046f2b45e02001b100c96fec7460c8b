@@ -1,0 +1,66 @@
+package com.Assignment4;
+
+import java.util.List;
+
+public class ShipmentBOSI {
+	private String shipmentId;
+	private ContactBOSI contactBO;
+	private List<ItemBOSI> itemBOs;
+	private List<AddressBOSI> addressBOs;
+	private String shipmentStatus;
+	public void setshipmentid( String shipmentId)
+	{
+		this.shipmentId=shipmentId;
+	}
+	public void setcontactbo(ContactBOSI contactBO)
+	{
+		this.contactBO=contactBO;
+	}
+	public void setitembo(List<ItemBOSI> itemBOs)
+	{
+		this.itemBOs=itemBOs;
+	}
+	public void setaddressbo(List<AddressBOSI> addressBOs)
+	{
+		this.addressBOs=addressBOs;
+	}
+	public void setshipmentstatus(String shipmentStatus)
+	{
+		this.shipmentStatus=shipmentStatus;
+	}
+	public String getshipmentid()
+	{
+		return shipmentId;
+	}
+	public ContactBO getcontactbo()
+	{
+		return contactBO;
+	}
+	public List<ItemBO> getitembo()
+	{
+		return itemBOs;
+	}
+	public List<AddressBO> getaddressbo()
+	{
+		return addressBOs;
+	}
+	public String getshipmentstatus()
+	{
+		return shipmentStatus;
+	}
+	public void displayInfo()
+	{
+		System.out.println("ShipmentId:"+shipmentId+"\t"+"shipmentstatus:"+shipmentStatus);
+		contactBO.displaycontact();
+		for(ItemBO item:itemBOs)
+		{
+			System.out.println("Items list:"+item);
+		}
+		for(AddressBO address:addressBOs)
+		{
+			System.out.println("Address:"+address);
+		}
+	}
+}
+
+

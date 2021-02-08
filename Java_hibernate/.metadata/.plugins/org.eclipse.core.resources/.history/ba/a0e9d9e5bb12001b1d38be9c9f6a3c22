@@ -1,0 +1,13 @@
+package com.nisum.SpringbootHibernateOneToManyAnnotation;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class SpringbootHibernateOneToManyAnnotationApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(SpringbootHibernateOneToManyAnnotationApplication.class, args);
+	}
+
+}

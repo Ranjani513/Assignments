@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<element>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>StudentRegistrationForm</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+     <welcome-file>loginhtml.html</welcome-file>
+      
+         <welcome-file>errormsg.jsp</welcome-file>
+            <welcome-file>display.jsp</welcome-file>
+              
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+   
+   
+    <servlet-name>Displaydetails</servlet-name>
+    <servlet-class>com.servlet.Displaydetails</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>Displaydetails</servlet-name>
+    <url-pattern>/Displaydetails</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+   
+   
+    <servlet-name>LoginValidation</servlet-name>
+    <servlet-class>com.servlet.LoginValidation</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>LoginValidation</servlet-name>
+    <url-pattern>/LoginValidation</url-pattern>
+  </servlet-mapping>
+   <servlet>
+    <servlet-name>VerifyId</servlet-name>
+    <servlet-class>com.servlet.VerifyId</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>VerifyId</servlet-name>
+    <url-pattern>/VerifyId</url-pattern>
+  </servlet-mapping>
+   
+ 
+</web-app>
+</element>

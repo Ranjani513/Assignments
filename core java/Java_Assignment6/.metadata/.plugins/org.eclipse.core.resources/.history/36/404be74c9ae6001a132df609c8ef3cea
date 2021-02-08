@@ -1,0 +1,60 @@
+// 6.Write a thread class with synchronize block
+public class A6 {
+	
+	 public void display(int n)
+	{
+		 synchronized(this) {
+		for(int i=1;i<5;i++) {
+		System.out.println(i*n);
+		try
+		{
+			Thread.sleep(500);
+		}
+		catch(Exception e)
+		{
+			System.out.println(e);
+		}
+	}
+	}
+	}
+	
+	  public static void main(String[] args) {
+			// TODO Auto-generated method stub
+	    A6 a=new A6();
+	    Thread1 t1=new Thread1(a);
+	    t1.start();
+	    Thread2 t2=new Thread2(a);
+	    t2.start();
+	    
+	  
+	}
+}
+	
+	class Thread1 extends Thread
+	{
+		A6 a;
+		Thread1(A6 a)
+		{
+			this.a=a;
+		}
+		public void run()
+		{
+			a.display(2);
+		}
+	};
+	class Thread2 extends Thread
+	{
+		A6 a;
+		Thread2(A6 a)
+		{
+			this.a=a;
+		}
+		public void run()
+		{
+			a.display(5);
+		}
+	};
+	
+
+
+

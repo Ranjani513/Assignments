@@ -1,0 +1,5 @@
+package com.nisum.SpringbootHibernateManyToManyAnnotation.entity;
+
+public class Tag {
+
+}

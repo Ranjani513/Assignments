@@ -1,0 +1,17 @@
+127.0.0.1 - - [10/Oct/2020:08:12:27 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [10/Oct/2020:08:12:29 +0530] "GET /SpringMVCValidation/ HTTP/1.1" 200 456
+0:0:0:0:0:0:0:1 - - [10/Oct/2020:08:12:29 +0530] "GET /SpringMVCValidation/resources/css/main.css HTTP/1.1" 200 176
+127.0.0.1 - - [10/Oct/2020:08:14:44 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [10/Oct/2020:08:14:45 +0530] "GET /SpringMVCCRUDSimple/ HTTP/1.1" 200 103
+0:0:0:0:0:0:0:1 - - [10/Oct/2020:08:14:48 +0530] "GET /SpringMVCCRUDSimple/empform HTTP/1.1" 500 8351
+0:0:0:0:0:0:0:1 - - [10/Oct/2020:08:14:56 +0530] "GET /SpringMVCCRUDSimple/viewemp HTTP/1.1" 500 8351
+127.0.0.1 - - [10/Oct/2020:08:17:11 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [10/Oct/2020:08:17:12 +0530] "GET /SpringMVCCRUDSimple/ HTTP/1.1" 200 103
+0:0:0:0:0:0:0:1 - - [10/Oct/2020:08:17:15 +0530] "GET /SpringMVCCRUDSimple/viewemp HTTP/1.1" 200 474
+0:0:0:0:0:0:0:1 - - [10/Oct/2020:08:17:21 +0530] "GET /SpringMVCCRUDSimple/empform HTTP/1.1" 200 704
+127.0.0.1 - - [10/Oct/2020:08:18:43 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [10/Oct/2020:08:18:44 +0530] "GET /SpringCrud/ HTTP/1.1" 404 766
+0:0:0:0:0:0:0:1 - - [10/Oct/2020:08:20:00 +0530] "GET /SpringMVCCRUDSimple/ HTTP/1.1" 500 4872
+127.0.0.1 - - [10/Oct/2020:08:21:19 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [10/Oct/2020:08:21:20 +0530] "GET /SpringMVCCRUDSimple/ HTTP/1.1" 200 103
+0:0:0:0:0:0:0:1 - - [10/Oct/2020:08:21:23 +0530] "GET /SpringMVCCRUDSimple/viewemp HTTP/1.1" 200 676

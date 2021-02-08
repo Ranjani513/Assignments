@@ -1,0 +1,35 @@
+import java.io.File;
+import java.util.Scanner;
+
+// 19) Program to read the Boolean value from the file using hasNextBoolean() method of Scanner class.
+public class A19 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		File file = new File("input.txt");
+		// initialize the scanner
+		Scanner scan = new Scanner(file);
+		// iterate through the file line by line
+		while(scan.hasNextLine()){
+			// check if token consists of boolean
+			if(scan.hasNextBoolean()){
+				// if the token is true, print the token otherwise exit the loop
+				if(scan.nextBoolean()){
+					System.out.println(scan.nextLine());
+				}
+				else{
+					break;
+				}
+			}
+			// printing the token
+			else{
+				System.out.println(scan.nextLine());
+			}
+		}
+		scan.close();
+
+	}
+
+	}
+
+

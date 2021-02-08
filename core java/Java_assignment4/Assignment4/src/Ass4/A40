@@ -1,0 +1,8 @@
+
+40. What are the possibilities to get an error? If possible write a program.
+
+A)We generally get syntax  error,runtime error and logic errors.
+Errors can be handled in java.
+We have Checked Exceptions which means we can handle the errors  at the complietime and Unchecked Exceptions which 
+occured at the Runtime.We can handle both runtime and complietime exceptions using following keywords like try,catch,throw,
+throws,finally.

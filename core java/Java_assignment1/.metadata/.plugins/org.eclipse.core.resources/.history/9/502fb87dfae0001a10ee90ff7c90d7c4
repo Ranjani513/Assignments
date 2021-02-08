@@ -1,0 +1,10 @@
+package com.nisum;
+
+public class A17 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+   System.out.println("No of words in a string is:"+args.length );
+	}
+
+}

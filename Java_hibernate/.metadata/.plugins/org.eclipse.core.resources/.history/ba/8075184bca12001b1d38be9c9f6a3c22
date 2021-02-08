@@ -1,0 +1,42 @@
+package com.nisum.main;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+
+import com.nisum.model.Address;
+import com.nisum.model.Applicant;
+import com.nisum.util.HibernateUtil;
+
+public class Main {
+	public static void main(String[] args) {
+		SessionFactory sf = HibernateUtil.getSessionFactory();
+		Session session = sf.openSession();
+		Transaction t = session.beginTransaction();
+		Applicant applicant = new Applicant();
+		applicant.setFirstName("srinu");
+		applicant.setLastName("y");
+		applicant.setAge(21);
+		applicant.setEducation("Graduation");
+		
+		Address currentAdd = new Address();
+		currentAdd.setStreet("Royal road");
+		currentAdd.setCity("mumbai");
+		currentAdd.setZipcode("133001");
+		
+		currentAdd.setApplicant(applicant);
+		Address permanentAdd = new Address();
+		permanentAdd.setStreet("ramnagar Road");
+		permanentAdd.setCity("pune");
+		permanentAdd.setZipcode("2060");
+		
+		permanentAdd.setApplicant(applicant);
+		session.persist(applicant);
+		session.persist(currentAdd);
+		session.persist(permanentAdd);
+		t.commit();
+		session.close();
+		System.out.println("successfully persisted Applicant details");
+	}
+
+}

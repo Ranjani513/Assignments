@@ -1,0 +1,9 @@
+package com.nisum.main;
+
+public class UserException {
+
+	public UserException() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

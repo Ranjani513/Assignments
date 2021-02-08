@@ -1,0 +1,5 @@
+127.0.0.1 - - [03/Oct/2020:19:18:03 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [03/Oct/2020:19:18:05 +0530] "GET /SpringResources/ HTTP/1.1" 200 453
+0:0:0:0:0:0:0:1 - - [03/Oct/2020:19:18:05 +0530] "GET /SpringResources/resources/js/sample.js HTTP/1.1" 404 682
+0:0:0:0:0:0:0:1 - - [03/Oct/2020:19:18:05 +0530] "GET /SpringResources/resources/css/main.css HTTP/1.1" 404 682
+0:0:0:0:0:0:0:1 - - [03/Oct/2020:19:18:05 +0530] "GET /SpringResources/resources/images/flower.png HTTP/1.1" 404 682

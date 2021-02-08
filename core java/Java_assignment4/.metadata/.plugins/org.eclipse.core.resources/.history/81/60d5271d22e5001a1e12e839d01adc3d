@@ -1,0 +1,59 @@
+/*Assignment 7:
+
+
+1. Write a method which takes List as input and return list of items that are positioned in even indexed. [0, 2, 4]. use generics
+
+2. Write a method to add items in a list which should allow max upto 5 items. it should throw if we try to add more items. use generics
+
+3) Enhance the above method such that it should not throw error and replaces the next first occurrence. it should replace item of 0 index followed by next index and so on..
+*/
+package Ass4;
+
+import java.util.ArrayList;
+
+public class Ass7 {
+	static int count=0;
+	static int count1=0;
+public static void even(ArrayList<Integer> a)
+{
+	for(int s:a) {
+	if(count%2==0)
+	{
+		System.out.println(s);
+	}
+	count++;
+}
+}
+	public static void list(ArrayList<Integer> a,ArrayList<Integer> a1) throws Exception
+	{
+		for(int s:a) {
+			
+			if(count1!=5)
+			{
+				System.out.println(a1.add(s));
+			}
+			else
+			{
+				throw new Exception("Exceed the count");
+			}
+			count1++;
+			
+	}
+		
+	}
+public static void main(String[] args)
+{
+	ArrayList<Integer> a1=new ArrayList<>();
+	ArrayList<Integer> a=new ArrayList<>();
+	a.add(3);
+	a.add(4);
+	a.add(5);
+	a.add(6);
+	a.add(10);
+	a.add(76);
+	a.add(100);
+	Ass7.even(a);
+	Ass7.list(a, a1);
+	
+}
+}

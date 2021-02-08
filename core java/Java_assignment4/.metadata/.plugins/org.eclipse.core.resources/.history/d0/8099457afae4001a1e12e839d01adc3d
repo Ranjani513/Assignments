@@ -1,0 +1,12 @@
+/*1) Create a class which should hold products using a Map using id as key. Write a method which takes Product object as input and stores in the products collection.
+	Product[ id, name, price]
+
+2) Write a method to print the products.
+
+3) Write a method which returns the list of ids that map contains.
+*/
+package Ass4;
+
+public class Ass3 {
+
+}

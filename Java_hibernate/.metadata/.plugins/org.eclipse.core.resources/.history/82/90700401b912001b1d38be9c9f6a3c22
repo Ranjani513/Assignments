@@ -1,0 +1,5 @@
+package com.nisum.SpringbootHibernateOneToManyAnnotation.entity;
+
+public class Post {
+
+}
