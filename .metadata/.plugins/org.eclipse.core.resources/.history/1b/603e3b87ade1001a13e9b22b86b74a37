@@ -1,0 +1,41 @@
+package com.Ass2;
+
+ class Parent1 {
+static String name;
+static String id;
+static int age;
+Parent1(String name,String id,int age)
+{
+	this.name=name;
+	this.id=id;
+	this.age=age;
+}
+public static void getdetails()
+{
+	System.out.println("Name:"+name+"\n"+"Id:"+id+"\n"+"Age:"+age);
+}
+
+}
+class Child extends Parent1
+{
+	Child(String name, String id, int age) {
+		super(name, id, age);
+		// TODO Auto-generated constructor stub
+	}
+
+	public void childmethod()
+	{
+		super.getdetails();
+	}
+	public void details()
+	{
+		System.out.println("name:"+name+"from child class");
+	}
+}
+class Parent
+{
+	public static void main(String []args)
+	{
+		
+	}
+}

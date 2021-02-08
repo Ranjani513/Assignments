@@ -1,0 +1,32 @@
+package com.Ass2;
+
+ class Parent1 {
+static String name;
+static String id;
+static int age;
+Parent1(String name,String id,int age)
+{
+	this.name=name;
+	this.id=id;
+	this.age=age;
+}
+public static void getdetails()
+{
+	System.out.println("Name:"+name+"\n"+"Id:"+id+"\n"+"Age:"+age);
+}
+
+}
+class Child extends Parent1
+{
+	public void childmethod()
+	{
+		super.getdetails();
+	}
+}
+class Parent
+{
+	public sttaic void main(String []args)
+	{
+		
+	}
+}

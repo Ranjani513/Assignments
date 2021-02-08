@@ -1,0 +1,17 @@
+//23)Create a class parent class Nisum and subclass Employee. Access instance variables of Nisum from Employee without using super keyword.
+
+
+package com.Ass2;
+
+public class A23 {
+
+}
+class Nisum extends A23{
+	String name="Ranjani";
+	String desg="Trainee software engineer";
+	
+}
+class Employee extends Nisum
+{
+	
+}
