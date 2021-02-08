@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- internal style-->
+	
+<style>
+	body{
+		background-image: url("paper.gif");
+		background-repeat: "repeat";
+		background-attachment: "fixed";
+		background-size:100% 100%; 
+	}
+	.mystyle{
+		background-color: 	#FFB6C1;
+		border: 2px outset blue;
+         height:5%;
+		border-radius: 25px;
+		padding: 0px,10px,0px,10px;
+		text-align:center;
+		
+			}
+			#activity{
+				background-image:url("bg.jpg");
+			}
+
+	a.visited{
+		color:pink;
+	}
+	a.hover{
+		color:red;
+		text-decoration:none;
+		
+	}
+</style>
+	<title>inside_Nisum_logo</title>
+</head>
+<body>
+	<h3 id="top" style="color:red;border-style:double;border-color:red;width:10%"title="Go to bottom of the page "><a href="#bottom">Reached top </a></h3>
+	<marquee width="100%" direction="left" height="100%" style="color:blue;font-size:200%;" scrollamount="5">
+    nisum
+</marquee>
+	<div id="activity">
+		<h1>Activity</h1>
+		<ul>
+			<li>
+				<a href="#"><h3>Projects</h3></a>
+			</li>
+			<li>
+				<a href="#profile"><h3>Personal Profile</h3></a>
+			</li>
+			<li>
+				<a href="#"><h3>Clients</h3></a>
+			</li>
+			<li>
+				<a href="Details.html"><h3>Employees</h3></a>
+			</li>
+		</ul>
+	</div>
+	
+<picture>
+	<source media="(min-width:500px)" srcset="nisum.png">
+	<source media="(min-width:465px)" srcset="office1.jpg">	
+</picture>
+<br><br><br><br><br><br><br><br>
+<form id="profile" action="profile.html" style="text-align: center;background-image:url(login.jpg);color:white;"padding-top="220px;">
+		<fieldset>
+			<legend>****************personalinfo**************</legend>
+		 <label for="fname">First name:</label>
+    <input type="text" id="fname" name="fname" placeholder="Enter your firstname"><br><br>
+    <label for="lname">Last name:</label>
+    <input type="text" id="lname" name="lname" placeholder="Enter your Lastname"><br><br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="Enter email-id"><br><br>
+    <label for="birthday">Birthday:</label>
+    <input type="date" id="birthday" name="birthday"><br><br>
+    <label >Gender:</label><br>
+    <input type="radio" id="male" name="gender" value="male">
+  <label for="male">Male</label><br>
+  <input type="radio" id="female" name="gender" value="female">
+  <label for="female">Female</label><br>
+  <input type="radio" id="other" name="gender" value="other">
+  <label for="other">Other</label>
+<br><br>
+    <label for="degree" >Qualification:</label>
+    <select>
+    	<option value="--select--">--select--</option>
+    	<option value="ECE">ECE</option>
+    	<option value="CSE">CSE</option>
+    	<option value="ME">Mechanical</option>
+    	<option value="CE">Chemical</option>
+    	<option value="MME">MME</option>
+    	<option value="cE">CIVIL</option>
+    </select><br><br>
+
+    <input type="submit" value="Submit">
+		</fieldset>
+	</form>
+	<br><br><br>
+<h3 style="color:blue;float:right;border-style:solid;width:20%;height:20%"title="Go to site"> <a href="https://www.nisum.com/">click here for nisum home page</a></h3>
+<br><br><br><br><br><br><br><br><br><br>
+<!-- inline style-->
+<h3 id="bottom" style="color:red;border-style:double;border-color:red;width:10%"title="Go to top of the page"><a href="#top">Reached bottom</a></h3>
+<br>
+<h1 style="color:blue;font-family:italic;text-decoration:none;text-align:center;"><a href="Frontpage.html">Thank You</a></h1>
+</body>
+</html>

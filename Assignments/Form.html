@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Forms</title>
+	<style>
+.mystyle
+{
+margin-left:100px;
+}
+</style>
+</head>
+	
+
+<body>
+	<fieldset style="border:10px outset blue;">
+		<legend style="color:blue;text-align:center;font-size:50px;"><b>***********Form*********</b></legend>
+		<div style="margin-left: 100px;">
+<form style="margin-left:200px;" target="_blank" method="post" autocomplete="on" novalidate id="form1" >
+	<label for="fname"><b>First name:</b></label>
+  <input type="text" id="fname" name="fname" value="Ranjani" readonly size="10" disabled style="border-radius:5px;border:3px outset black;" ><br><br>
+  <label for="lname"><b>Last name:</b></label>
+  <input type="text" id="lname" name="lname"  maxlength="8" autofocus required title="please fill the field" style="border-radius:6px;border:3px inset red;border-top-width:thin;border-top-color:red; "><br><br>
+  <label for="birthday"><b>Birthday:</b></label>
+  <input type="datetime-local" id="birthday" name="birthday" max="2022-12-31" min="1998-12-31">
+<br><br>
+<label for="phone"><b>Enter your phone number:</b></label>
+  <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="900-085-5945"><br><br>
+  <label for="homepage"><b>Add your homepage:</b></label>
+  <input type="url" id="homepage" name="homepage"><br><br>
+  <label for="myfile"><b>Select a file:</b></label>
+  <input type="file" id="myfile" name="myfile" multiple><br><br>
+
+  
+  <label for="gender"><b>Gender:</b></label>
+  <div class="mystyle">
+  <input type="radio" id="male" name="gender" value="male">
+  <label for="male">Male</label><br>
+  <input type="radio" id="female" name="gender" value="female">
+  <label for="female">Female</label><br>
+  <input type="radio" id="other" name="gender" value="other">
+  <label for="other">Other</label><br>
+</div>
+<label ><b>Skills:</b></label>
+<div class="mystyle">
+  <input type="checkbox" id="s1" name="s1" value="Java">
+  <label for="s1">  Java</label><br>
+  <input type="checkbox" id="s2" name="s2" value=" html">
+  <label for="s2">  html</label><br>
+  <input type="checkbox" id="s3" name="s3" value="css">
+  <label for="s3">  css</label>
+</div><br>
+<label for="quantity"><b>AgeQuantity:</b></label>
+  <input type="number" id="quantity" name="quantity" min="1" max="60" value="21" step="2"><br><br>
+  <label for="req"><b>Required:</b></label>
+  <input type="range" id="req" name="req" min="0" max="50"><br><br>
+  <label for="gsearch"><b>Search Google:</b></label>
+  <input type="search" id="gsearch" name="gsearch">
+<br><br>
+<label for="joindate"><b>Joindate (month and year):</b></label>
+  <input type="month" id="joindate" name="joindate"><br><br>
+<label for="Qualification" ><b>Qualification:</b></label>
+    <select id="Qualification" >
+    	<option value="--select--">--select--</option>
+    	<option value="ECE">ECE</option>
+    	<option value="CSE">CSE</option>
+    	<option value="ME">Mechanical</option>
+    	<option value="CE">Chemical</option>
+    	<option value="MME">MME</option>
+    	<option value="cE">CIVIL</option>
+    </select><br><br>
+    <label for="Address"><b>Address:</b></label><br>
+    <textarea id="Address" rows="8" col="70" class="mystyle">Address:</textarea><br><br>
+<label for="country"><b>Country</b></label>
+<input list="country">
+<datalist id="country" >
+	<option value="India">
+	<option value="America">
+	<option value="China">
+	<option value="England">
+	<option value="Russia">	
+	</datalist><br><br>
+	<label for="favcolor">Select your favorite color:</label>
+      <input type="color" id="favcolor" name="favcolor" value="#0080ff">
+        <input type="color" id="favcolor" name="favcolor" value="	#ff0080">
+          <input type="color" id="favcolor" name="favcolor" value="#ff0000">
+            <input type="color" id="favcolor" name="favcolor" value="	#00ff00">
+<br><br>
+	<input type="submit" value="Submit">
+	<input type="reset" value="Reset">
+	<button type="button" onclick="alert('Success!')">Click here</button>
+	<input type="submit" formaction="page2.html"  formenctype="multipart/form-data" formmethod="get" formtarget="_self" value="Submit as Admin">
+</form>
+</div>
+<label for="hi"><b>Signature:</b></label>
+<input id="hi" type="text" name="About" form="form1">
+</fieldset>
+
+</body>
+</html>
