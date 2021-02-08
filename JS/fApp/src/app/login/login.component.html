@@ -1,0 +1,19 @@
+
+<body >
+    <h3>Login Form</h3>
+<form #userForm="ngForm" (ngSubmit)="onSubmit(userForm.value)" class="form-inline">
+    <label for="fName"><b>FirstName:</b></label>
+    <input type="text" name="fName" [(ngModel)]="name"><br><br>
+    <label for="pwd"><b>Password:</b></label>
+    <input type="password" name="pwd" [ngModel]><br><br>
+    <button type="submit" class="btn btn-primary">Login</button>
+<br>
+<br>
+<hr>
+Not have an Account?:&nbsp;
+<a  routerLink="/register" routerLinkActive='active'>Register</a>
+</form>
+
+<b>Your entered data :{{name}}</b>
+
+</body>

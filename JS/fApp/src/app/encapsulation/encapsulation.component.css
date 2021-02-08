@@ -1,0 +1,16 @@
+.encap{
+    
+
+    display:inline-block;
+    background:green;
+    color:white;
+    text-align:center;
+    margin-left:300px;
+  }
+  body{
+      text-align:'center';
+      border:3px outset blue;
+ 
+     padding-left:10px;
+      
+  }

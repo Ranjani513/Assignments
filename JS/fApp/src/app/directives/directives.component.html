@@ -1,0 +1,28 @@
+<body>
+    <div style="border:3px outset blue;">
+<h3>Directives</h3>
+<h4>Structural Directive(*ngIf)</h4><br><br>
+<p *ngIf="show"><button type="button" class="btn btn-primary" >using *ngIf</button><br></p>
+
+<h4>Structural Directive(*ngFor) and Attribute Directives ( ngClass and ngStyle)</h4>
+
+<ul *ngFor="let person of persons" >
+    <li style="margin-left:200px;font-size:50px;"  [ngClass] ="{
+        'text-success':person==='ranjani',
+        'text-danger':person==='Nikhila'
+
+    }">
+<div [ngStyle]="{'color': 'blue', 'font-size': '24px', 'font-weight': 'bold','font-family':'sans-serif'}">
+       <p> {{person}}</p>
+    </div>
+</li>
+</ul>
+
+<h4>Structural Directive(*ngSwitch)</h4>
+<div [ngStyle]="{'font-weight':'bold','font-size': '24px'}" [ngSwitch]="'java'">
+    <div *ngSwitchCase="'java'">Java is Displayed</div>  
+    <div *ngSwitchCase="'springboot'">Springboot is Displayed</div>  
+    <div *ngSwitchDefault>Default Option is Displayed</div>  
+  </div>
+</div>
+</body>

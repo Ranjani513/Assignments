@@ -1,0 +1,45 @@
+body{
+    background-image:url('../assets/images/office1.jpg');
+    background-size:cover;
+    background-repeat:no-repeat;
+   width:1500px;
+   height:1500px;
+   background-attachment: "fixed";
+}
+ul {
+    list-style-type: none;
+    margin:10;
+    padding:0;
+    width: 200px;
+    background-color: #f1f1f1;
+    border: 1px solid #555;
+    float:left;
+    clear:left;
+  }
+  
+  li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+  
+  li {
+    text-align: center;
+    border-bottom: 1px solid #555;
+  }
+  
+  li:last-child {
+    border-bottom: none;
+  }
+  
+  li a.active {
+    background-color:black;
+    color: white;
+  }
+  
+  li a:hover:not(.active) {
+    background-color:red;
+    color: black;
+  }
+  
