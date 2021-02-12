@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title></title>
+	<style>
+		body{
+			background-color:lightgreen;
+		}
+		@media screen and (min-width: 900px) {
+  body {
+    background-color: lightgreen;
+  }
+}
+		#grad {
+  background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
+  width:100%;
+  height:100px;
+}
+div.ex
+{
+	border:2px solid black;
+	width:25%;
+	margin-top:10px;
+	box-shadow:2px 2px 4px grey;
+	
+}
+div#ex1
+{
+	transform:translate(10px,10px);
+	transform:rotate(20deg);
+	margin-top:250px;
+	margin-left:10px;
+
+	/*transform:scaleX(0.5);*/
+}
+.flex-container {
+  display: flex;
+  background-color: DodgerBlue;
+  flex-direction:row;
+  
+  flex-wrap:wrap;
+   justify-content: center;
+   width:50%;
+    height:auto;
+}
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+  width:100px;
+   /*line-height: 5px;*/
+
+}
+div#ex2
+{
+	transform:skewX(20deg);
+	border:2px solid black;
+	width:25%;
+	margin-left:10px;
+	text-align:center;
+}
+div#ex3{
+	transform:rotateY(90deg);
+	border:2px solid black;
+	width:25%;
+	margin-left:10px;
+	text-align:center;
+}
+div#ex4{
+   width: 100px;
+  height: 100px;
+  background: red;
+  transition: width 2s, height 2s, transform 2s;
+  transition-timing-function: ease-in-out;
+  transition-delay:1s;
+}
+
+div#ex4:hover {
+  width: 300px;
+  height: 300px;
+  transform:rotate(180deg);
+}
+div#ex5 {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation-name: example;
+  animation-duration: 4s;
+  position:relative;
+    animation-iteration-count: infinite;
+    animation-direction:normal;
+    margin-right:1px;
+}
+
+@keyframes example {
+   0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
+.div2 {
+  width: 400px;
+  height: 200px;  
+  padding: 50px;
+  border: 1px solid red;
+  box-sizing: border-box;
+
+}
+</style>
+</head>
+<body>
+	<h1 style="text-align:center;background-color:black;color:white;">CSS gradient</h1>
+<div id="grad"></div>
+<h1 style="text-align:center;background-color:black;color:white;">CSS Shadow</h1>
+<div id="ex1">
+<div class="ex">
+<h1 style="text-shadow:2px 2px 4px red;">CSS shadow</h1>
+</div>
+</div>
+<h1 style="text-align:center;background-color:black;color:white;">CSS Transform</h1>
+<div id="ex2">
+	<h2>Skew</h2>
+</div>
+<div id="ex3">
+	<h4>3D transform</h4>
+</div>
+<h1 style="text-align:center;background-color:black;color:white;">CSS Transition</h1>
+<div id="ex4">
+	<h4>Transition</h4>
+</div>
+<h1 style="text-align:center;background-color:black;color:white;">CSS Animation</h1>
+<div id="ex5">
+	<h3>Animations</h3>
+</div>
+<h1 style="text-align:center;background-color:black;color:white;margin-top:200px;">CSS Box Sizing</h1>
+<div class="div2">
+	<h3 style="overflow-x:auto;overflow-y:auto;">Box Sizing : it includes padding and width in its total width</h3>
+</div>
+<h1 style="text-align:center;background-color:black;color:white;margin-top:200px;">CSS FlexBox</h1>
+<div class="flex-container">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>  
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>  
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>  
+</div>
+</body>
+</html>

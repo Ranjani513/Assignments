@@ -1,0 +1,69 @@
+package com.nisum.EmployeeDetails;
+
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.List;
+import java.util.Optional;
+import java.util.Scanner;
+import java.util.stream.Collectors;
+
+import com.nisum.Employee.Employee;
+import com.nisum.EmployeeService.EmployeeService;
+
+public class EmployeeDetails implements EmployeeService {
+public static List<Employee> list=new ArrayList<Employee>();
+
+@Override
+public void createEmployee(Employee emp) {
+	// TODO Auto-generated method stub
+	list.add(emp);
+}
+
+@Override
+public void UpdateEmployee(int id,Employee emp) {
+	// TODO Auto-generated method stub
+	
+		Optional<Employee> check=list.stream().filter(e->e.getId()==id).findAny();
+		if(check!=null) {
+	     list.stream().filter(e->e.getId()==id).forEach(e->{
+	    	 e.setId(emp.getId());
+	    	 e.setName(emp.getName());
+	    	 System.out.println("Updated Employee at id"+id+"\n"+"is name:"+e.getName()+"\t"+"id:"+e.getId());
+	    	 });
+	   
+	     
+		}
+	
+	else {
+		System.out.println("entered Id is not present!!"+"\n"+" If you want to create new Employee y/n");
+		Scanner sc=new Scanner(System.in);
+		char ch=sc.next().charAt(0);
+		if(ch =='y')
+		{
+			list.add(emp);
+			System.out.println("New Employee Created Successfully");
+		}
+		else
+		{
+			System.out.println("enter the valid Id");
+		}
+	}
+	
+}
+
+@Override
+public void DeleteEmployee(Employee emp) {
+	// TODO Auto-generated method stub
+	((Collection<Employee>) list.stream()).removeIf(e->e.equals(emp));
+	
+}
+
+@Override
+public void getALlEmployees() {
+	// TODO Auto-generated method stub
+	list.stream().forEach(System.out::println);
+}
+
+
+
+}

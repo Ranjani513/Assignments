@@ -1,0 +1,21 @@
+package com.nisum.Main;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import com.nisum.Employee.Employee;
+import com.nisum.EmployeeDetails.EmployeeDetails;
+
+public class Main extends EmployeeDetails{
+	public static List<Employee> list=new ArrayList<>();
+public static void main(String []args)
+{
+	EmployeeDetails emp=new EmployeeDetails();
+	emp.createEmployee(new Employee("ranjani",1));
+	
+	String n="nikhila";
+	int i=2;
+	emp.createEmployee(new Employee(n,i));
+	emp.getALlEmployees();
+}
+}

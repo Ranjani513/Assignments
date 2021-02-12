@@ -1,0 +1,95 @@
+<html>
+    <head>
+        <title>Vue Practise</title>
+        <script src="https://unpkg.com/vue"></script>
+    </head>
+    <body>
+       <div id="app">
+        <h3>Current Time :{{time}}</h3>
+        <h5> <span v-bind:title="message"> {{ message }}</span></h5><br>
+         <button @click="reverseName">ReverseMessage</button><br>
+         <input v-model="msg" placeholder="Type here"></input>
+        <h5> {{Name}}</h5>
+        <h5>{{msg}}</h5>
+        <h4 v-once>The next will not be updated while we change on console:{{message}}</h4>
+       <p>some message using rawHTML: <span v-html="rawHTML"></span></p>
+       <a v-bind:href="link">Google</a><br>
+      <button @click="inc" v-bind:count="count" >increamentCount by 10:{{count}}</button>
+       <h4>{{count}}</h4>
+       
+       </div>
+       <div id="Vueconcepts">
+        <Vueconcepts></Vueconcepts>
+       </div>
+       <script>
+           var app=new Vue({
+               el:'#app',
+               data:{
+                   message:'Welcome to Nisum',
+                   Name:"Ranjani",
+                   msg:'Hi',
+                   time:new Date().toLocaleString(),
+                   rawHTML:'<span style="color:red">hello</span>',
+                   link:"https://www.google.com/",
+                   count:0,
+                   
+               },
+              
+               methods :{
+                 reverseName(){
+                     this.Name=this.Name.split('').reverse().join('');
+                     //alert("Name Changed Successfully");
+                 },
+                 
+                 inc()
+                 {
+                     this.count=this.count+10;
+                 }
+                },
+                 beforeCreate ()
+                 {
+                     console.log("before created");
+                 },
+                 created ()
+                 {
+                     console.log("after created");
+                 },
+                 beforeMount ()
+                 {
+                     console.log("before mount");
+                 },
+                 mounted()
+                 {
+                     console.log("after mounted");
+                 },
+                 beforeUpdate ()
+                 {
+                     console.log("beforeupdate");
+                 },
+                 updated()
+                 {
+                     console.log("afterupdate");
+                 },
+                 beforeDestroy()
+                 {
+                     console.log("before destroy");
+                 },
+                 destroyed()
+                 { 
+                     console.log("destroyed");
+                 }
+               
+               
+
+           })
+           Vue.component('Vueconcepts',{
+                 template:'<h4> Using Vue Component</h4>'
+               })
+               var c=new Vue(
+                   {
+                       el:'#Vueconcepts'
+                   }
+               )
+       </script>
+    </body>
+</html>

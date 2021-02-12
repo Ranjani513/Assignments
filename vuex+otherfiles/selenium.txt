@@ -1,0 +1,108 @@
+Xpath:
+
+Two types :
+
+Absolute Xpath: /html/body/div/
+
+Relative Xpath ://
+
+Basic Xpath :
+
+//input[@id=‘email’]
+//*[@id='email']
+//*[contains(@id,'email')]
+//*[contains(text(),'Create New Account')]
+//*[@name='email' and @id='email']
+//*[@name='email' or @id='email']
+
+id=“property12”
+id=“property123”
+id=“property123456”
+
+//input[starts-with(@id,'email')]
+//a[text()='Create New Account']
+
+Xpath axes:
+
+Following:
+//div[@id='pageFooterChildren']//following::li[4]
+
+Ancestor:
+//div[@id='pageFooterChildren']//ancestor::div[4]
+//div[@id='pageFooterChildren’]/..
+
+Child:
+ //div[@id='pageFooterChildren']//child::ul
+
+Preceding:
+//button[@name='login']//preceding::input[3]
+
+Following-Siblings:
+//ul[@class='uiList pageFooterLinkList _509- _4ki _703 _6-i']//following-sibling::li
+
+Parent:
+//ul[@class='uiList pageFooterLinkList _509- _4ki _703 _6-i']//parent::div
+
+Self:
+//*[@id='email']//self::input
+Css Selectors:
+Css Selector:
+
+Xpath: //input[@id=‘email’]
+Css : #email
+
+Xpath: //input[@class=‘email’]
+Css : .email
+
+
+Xpath : //input[@id=‘email’]
+Css: input[id=‘email’]
+
+Xpath: //input[@id=‘email’ and @name=‘email’]
+
+Css: input[id=‘email’][name=‘email’]
+
+Attributes:
+id=“property12”
+name=‘12345property657’
+Start-with: div[id^=‘property’]
+
+Ends-with : div[id$=’12’]
+
+Contains: div:contains(‘property’)
+
+
+
+
+
+
+
+Static file name - screenshot1.png
+        dynamic filename - screenshot_"timeStamp".png
+        Example: screenshot_202012241145.png
+
+Checkbox:
+
+Visit myntra.com website.
+Search with “Shirts”.
+On the search results page, in the filters section.
+In the category section, select any one option.
+In the Brands section, select any one option.
+
+
+
+
+
+driver.findElement(By.className("desktop-searchBar")).sendKeys("Shirts"+ Keys.ENTER );
+        List<WebElement> clickOnCheckBox= driver.findElements(By.xpath("//ul[@class='categories-list']/li"));
+        for (int i=1;i<=clickOnCheckBox.size();i++){
+            String getCategoryVal=driver.findElement(By.xpath("//ul[@class='categories-list']/li["+i+"]/label/input")).getAttribute("value");
+            if (getCategoryVal.equals("Shirts"))
+            {
+                driver.findElement(By.xpath("//ul[@class='categories-list']/li["+i+"]/label/div")).click();
+                Thread.sleep(1000);
+                break;
+            }
+        }
+
+        driver.close();

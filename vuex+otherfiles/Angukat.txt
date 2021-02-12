@@ -1,0 +1,209 @@
+<app-employeedetails></app-employeedetails>
+<app-child></app-child>
+<app-parent></app-parent>
+<h3>View Encapsulation</h3>
+<app-encapsulation></app-encapsulation>
+<app-child1></app-child1>
+<h3>Pipes & Custom pipe</h3>
+<app-pipes></app-pipes>
+
+
+
+ <p>{{user}}</p>
+
+    <!--<p>Home icon: <span class="glyphicon glyphicon-home"></span></p>-->
+    <button type="button" class="btn btn-primary">Primary</button>
+    <h3>property binding</h3>
+    <button [disabled]='buttondisable'>submit</button>
+    <h3>String interpolation</h3>
+    <p>Hello {{user}}</p>
+    <h3>event binding</h3><br><br>
+   
+    <button (click)="change()">welcome</button><br><br>
+    <h3>Two way binding</h3>
+
+    <input [(ngModel)]="concept" placeholder="type here"  type="text"/> <br/><br/>    
+
+   <p> {{concept}}</p>
+<br>
+<br>
+
+<h3>Routing and application</h3>
+<nav>
+     <button type="submit"  class="btn btn-primary" routerLink="/login"  >Login</button><br><br>
+     <button type="submit"  class="btn btn-primary"  routerLink="/about" >About</button><br><br>
+     <button type="submit"  class="btn btn-primary"  routerLink="/register" >Register</button><br>
+</nav>
+
+
+<h3>Structural Directive(*ngIf)</h3>
+<p *ngIf="show">It will be visible</p>
+<h3>Structural Directive(*ngFor) and Attribute Directives ( ngClass and ngStyle)</h3>
+<ul *ngFor="let item of items">
+    <li [ngClass] ="{
+        'text-success':item==='ranjani',
+        'text-danger':item==='sushma'
+
+    }">
+<div [ngStyle]="{'font-size.px':24}">
+       <p> {{item}}</p>
+    </div>
+</li>
+</ul>
+<h3>Structural Directive(*ngSwitch)</h3>
+<div [ngSwitch]="'java'">
+    <div *ngSwitchCase="'java'">java is Displayed</div>  
+    <div *ngSwitchCase="'springboot'">springboot is Displayed</div>  
+    <div *ngSwitchDefault>Default Option is Displayed</div>  
+  </div>
+  <!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+.input-container {
+  display: -ms-flexbox; 
+  display: flex;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.icon {
+  padding: 10px;
+  background: dodgerblue;
+  color: white;
+  min-width: 50px;
+  text-align: center;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+}
+
+.input-field:focus {
+  border: 2px solid dodgerblue;
+}
+
+/* Set a style for the submit button */
+.btn {
+  background-color: dodgerblue;
+  color: white;
+  padding: 15px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+</style>
+</head>
+<body>
+  <h1>Hello</h1>
+<div style="border:3px outset dodgerblue;">
+
+
+    <h3>Registration Form</h3>
+    <h5>Please fill the form</h5>
+<form  #userForm="ngForm" (ngSubmit)="onSubmit(userForm.value)" class="form-inline" style="max-width:500px;margin:auto">
+ 
+  <div class="input-container">
+    <i class="fa fa-user icon"></i>
+    <input class="input-field" type="text" placeholder="Username" name="usrnm" [(ngModel)="name"]>
+  </div>
+
+  <div class="input-container">
+    <i class="fa fa-envelope icon"></i>
+    <input class="input-field" type="text" placeholder="Email" name="email" [(ngModel)]="email">
+  </div>
+  
+  <div class="input-container">
+    <i class="fa fa-key icon"></i>
+    <input class="input-field" type="password" placeholder="Password" name="psw" [ngModel]>
+  </div>
+
+  <button type="submit" class="btn" routerLink="/login">Register</button>
+</form>
+<hr>
+Already Have an Account:&nbsp;
+ 
+     <a routerLink="/login" routerLinkActive='active' style="text-decoration:none ;" >
+    Login
+</a>
+<br>
+<br>
+<b>Your entered name :{{name}}</b><br>
+<b>Your entered email :{{email}}</b>
+
+</div>
+</body>
+</html>
+ < Stateex></Stateex>
+    <Increment></Increment>
+    <FunctionalComponent></FunctionalComponent>
+    <Parent></Parent>
+    <br></br>
+    <h2>ToDo List</h2>
+
+From Rajesh Ammula to Everyone:  03:00 PM
+https://material-ui.com/getting-started/installation/
+https://react-bootstrap.github.io/getting-started/introduction/
+vue
+https://docs.google.com/document/d/1N5XZZ9rvd2_lDNEvK7c5nx_SdEA7BC2EfkgAHWPjUmU/edit?usp=sharing
+https://docs.google.com/document/d/1e1CWkXQsqK-pvt5WvC-L8VIPgfN8tMBKKq5FKwLdW_g/edit?usp=sharing
+
+
+ install node js and Vue CLI on pc
+ Create a new vue application
+ Import vue bootstrap
+ Create separate components based on functionality
+ Show string interpolation, bind dynamic attributes
+ Handle click functions using buttons
+ Use life cycle hooks in a creative way. Call some functions and show data on mounted etc.,
+ Bind raw html, Use javascript expressions
+ Use computed property and watch to observe a data property.
+ Use style objects and class objects where ever styles are necessary.
+ Use vif, velseif, velse and use vfor for showing a list of items.
+ Use an event modifier and key modifier.
+ Send data from parent to child and emit data from child and capture it in parent.
+ Create a git repo and push the code.
+ Submit the repo links in the sheet
+
+https://docs.google.com/document/d/1bNyE-E9zuJuzzQvmXz2xm70JaS5eUnMnjFRa6qhAloY/edit?usp=sharing
+
+
+Ø Attend all trainings and gain good hands.
+Ø Improve the learning capabilities and be competitive.
+Ø Adherence to the Org process and procedures.
+Ø Timely timesheet submissions
+Ø Improve the Communication and presentation skills
+Ø Proactively bring up any learning challenges with management.
+Ø Identify one primary skill and come up with certification.
+
+
+
+
+Use slots
+Create a dynamic component
+Use a mixin
+Show options merging feature
+Routing
+Install vue router
+Use router to route bw 2 or more components
+Use named route and direct path
+Lazy load a route
+Integrate axios , make an api call and show data in template
+
+
+
+import productmixins from '../mixins/productmixins'
+mixins:[productmixins],

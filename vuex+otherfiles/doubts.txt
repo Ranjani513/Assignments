@@ -1,0 +1,2 @@
+why we are not using lifecycle hooks inside the methods object?
+how can we write two way binding without v-model?

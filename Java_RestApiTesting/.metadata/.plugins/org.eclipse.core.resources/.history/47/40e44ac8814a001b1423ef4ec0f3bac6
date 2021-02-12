@@ -1,0 +1,21 @@
+package FunctionalTesting;
+
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+import io.restassured.response.Response;
+
+import static io.restassured.RestAssured.*;
+public class GetrequestAutomation {
+@Test
+public void test()
+{
+	given().get("http://dummy.restapiexample.com/api/v1/employee/1").then().statusCode(200);
+}
+@Test
+public void test1()
+{
+	Response response=when().get("http://dummy.restapiexample.com/api/v1/employee/1");
+	Assert.assertEquals(200, response.statusCode());
+}
+}

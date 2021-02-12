@@ -1,0 +1,11 @@
+package FunctionalTesting;
+
+import org.testng.annotations.Test;
+
+public class GetrequestAutomation {
+@Test
+public void test()
+{
+	
+}
+}

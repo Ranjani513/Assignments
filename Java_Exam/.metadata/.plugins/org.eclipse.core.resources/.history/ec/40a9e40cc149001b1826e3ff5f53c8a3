@@ -1,0 +1,24 @@
+import java.util.*;
+public class E {
+public static void main(String []args) {
+	
+	Scanner sc=new Scanner(System.in);
+
+	System.out.println("enter the length of the array");
+	int length=sc.nextInt();
+//char[] arr=new char[length];
+	
+	
+	System.out.println("enter the elements");
+	char[] arr = sc.next().toCharArray();
+	int numbers[] = new int[arr.length];
+		for(int j=0;j<arr.length;j++)
+	{
+		
+		int a=(char)arr[j];
+		numbers[j]+=a;
+	}
+	 Arrays.sort(numbers);
+	 System.out.println(Arrays.toString(arr));
+}
+}

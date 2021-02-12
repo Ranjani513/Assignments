@@ -1,0 +1,44 @@
+package com.nisum.EmployeeDetails;
+
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.List;
+import java.util.Optional;
+
+import com.nisum.Employee.Employee;
+import com.nisum.EmployeeService.EmployeeService;
+
+public class EmployeeDetails implements EmployeeService {
+public static List<Employee> list=new ArrayList<Employee>();
+
+@Override
+public void createEmployee(Employee emp) {
+	// TODO Auto-generated method stub
+	list.add(emp);
+}
+
+@Override
+public void UpdateEmployee(int id,Employee emp) {
+	// TODO Auto-generated method stub
+	 Optional<Integer> op = Optional.of(id); 
+	 op.orElse(0);
+	 list.stream().filter(emp->emp.getId()==id).forEach(System.out::println);
+	
+}
+
+@Override
+public void DeleteEmployee(Employee emp) {
+	// TODO Auto-generated method stub
+	((Collection<Employee>) list.stream()).removeIf(e->e.equals(emp));
+	
+}
+
+@Override
+public void getALlEmployees() {
+	// TODO Auto-generated method stub
+	list.stream().forEach(System.out::println);
+}
+
+
+
+}

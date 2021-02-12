@@ -1,0 +1,58 @@
+----------------------------------------------------------
+typeof(3);
+
+A)Number
+-------------------------------------------------
+typeof(3) === typeof(4.32);
+
+A)true
+--------------------------------------------------
+ 3 / "bob";
+
+A) NaN
+-------------------------------------------------
+NaN === NaN;
+
+A)false
+-------------------------------------------------
+typeof(NaN);
+
+A)Number
+----------------------------------------------------
+typeof("cats");
+
+A) String
+----------------------------------------------------------
+2, What is the value of the hello variable in the following expression?
+
+   var hello;
+   A) undefined
+----------------------------------------------------
+3.What does the following expression return?
+    var y;
+    y === "cool";
+A) false
+-----------------------------------------------------------
+4.What does the following expression return?
+
+   "some" + " person";
+A) someperson
+-------------------------------------------------------------
+5.What does the following expression return?
+    3 + "bob"
+A) NaN
+-------------------------------------------------------------------
+6.Divide the number 6 by the string "2" and explain the result.
+A)3
+JavaScript consider the String "2" as number for arithmetic operation.
+------------------------------------------------------------------
+7. What does the following expression return? Explain the result.
+
+    3 * "bob";
+A)NaN
+one is number and another is String so we cant perform the operation.
+------------------------------------------------------------------------------
+8.What does the following expression return?
+    var sport; 
+    sport === undefined
+A)true

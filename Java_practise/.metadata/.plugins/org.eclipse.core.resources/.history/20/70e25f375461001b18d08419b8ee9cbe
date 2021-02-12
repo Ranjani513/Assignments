@@ -1,0 +1,43 @@
+package com.nisum.service;
+import com.nisum.model.*;
+import com.nisum.repository.EmployeeRepository;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+@Service
+public class EmployeeService {
+	@Autowired  
+	EmployeeRepository employeeRepository;  
+
+	public List<Employee> getAllEmployees()   
+	{  
+	List<Employee> emps = new ArrayList<Employee>();  
+    employeeRepository.findAll().forEach(emp -> emps.add(emp));  
+	return emps;  
+	}  
+
+	public Employee getEmployeeById(int id)   
+	{  
+	return employeeRepository.findById(id).get();  
+	}  
+	
+	public void saveOrUpdate(Employee emp)   
+	{  
+	employeeRepository.save(emp);  
+	}  
+	 
+	public void delete(int id)   
+	{  
+	employeeRepository.deleteById(id);  
+	}  
+	
+	public void update(Employee emp, int empid)   
+	{  
+	employeeRepository.save(emp);  
+	}  
+	}  
+

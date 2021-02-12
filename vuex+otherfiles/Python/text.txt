@@ -1,0 +1,17 @@
+/usr/local/hacmp/params/first.txt	
+/admin/esp_scripts/second.txt
+/admin/hacmp/third.txt
+/admin/fourth.txt
+/appl/exe/source/i4gl/bmb01_prog-EXE_testing_only.4ge	 
+/appl/exe/source/i4gl/bmb01_scr-EXE_testing_only.frm	 
+/appl/exe/source/i4gl/britem2mvsEXE_testing_only.sql	 
+/appl/whse/source/i4gl/bmb01_prog-EXE_testing_only.4ge	 
+/appl/whse/source/i4gl/bmb01_scr-EXE_testing_only.frm	 
+/appl/whse/source/i4gl/britem2mvsEXE_testing_only.sql	 
+/appl/wmas/five.txt	 
+/appl/whse/config/six.txt 	
+/appl/whse/control/seven.txt	
+/appl/whse/source/scripts/eight.txt 	
+/appl/whse/tools/nine.txt
+/appl/whse/control/token/d2iudv10-in1/xxxx.CTC 	 
+/appl/whse/config/token/d2iudv10-in1/xxxx.sh

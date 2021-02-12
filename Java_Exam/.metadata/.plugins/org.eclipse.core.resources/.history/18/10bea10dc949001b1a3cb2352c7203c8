@@ -1,0 +1,25 @@
+import java.util.*;
+public class E {
+public static void main(String []args) {
+	
+	Scanner sc=new Scanner(System.in);
+
+	System.out.println("enter the length of the array");
+	int length1=sc.nextInt();
+	char[] arr=new char[length1];
+	
+	int numbers[] = new int[length1];
+	System.out.println("enter the elements");
+		for(int j=0;j<length1;j++)
+	{
+		 arr[j]=sc.next().charAt(j);
+		int a=(char)arr[j];
+		numbers[j]=arr[j];
+	}
+	 Arrays.sort(numbers);
+	for(int i=0;i<length1;i++)
+	{
+		System.out.println(numbers[i]);
+	}
+}
+}

@@ -1,0 +1,50 @@
+package com.nisum.Main;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+import com.nisum.Employee.Employee;
+import com.nisum.EmployeeDetails.EmployeeDetails;
+
+public class Main extends EmployeeDetails{
+	public static List<Employee> list=new ArrayList<>();
+public static void main(String []args)
+{
+	EmployeeDetails emp=new EmployeeDetails();
+	Scanner sc=new Scanner(System.in);
+	emp.createEmployee(new Employee("ranjani",1));
+	
+	String n="nikhila";
+	int i=2;
+	emp.createEmployee(new Employee(n,i));
+	emp.getALlEmployees();
+	System.out.println("enter  your  choice:"+"\n"+"1.Create Employee"+"\n"+"2.Update Employee"+"\n"+"3.Delete Employee"+"\n"+"4.GetAllEmployees");
+	int num=sc.nextInt();
+	switch(num)
+	{
+		case 1:
+			System.out.println("Enter the name");
+			String name=sc.next();
+			System.out.println("Enter the Id");
+			int id=sc.nextInt();
+			list.add(new Employee(name,id));
+			emp.createEmployee(new Employee(name,id));
+			break;
+		case 2:
+			System.out.println("enter the Id to be update");
+			int id1=sc.nextInt();
+			emp.UpdateEmployee(id1);
+			break;
+		case 3:
+			emp.DeleteEmployee(new Employee("ranjani",1));
+			break;
+		case 4:
+			emp.getALlEmployees();
+			break;
+		default:
+			System.out.println("enter the valid number");
+			break;
+	}
+}
+}

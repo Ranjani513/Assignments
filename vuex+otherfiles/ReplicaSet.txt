@@ -1,0 +1,24 @@
+apiVersion: extensions/v1beta1 
+kind: ReplicaSet 
+metadata:
+   name: nginx-ReplicaSet
+spec:
+   replicas: 3
+   selector:
+      matchLables:
+         tier: Backend 
+      matchExpression:
+{ key: tier, operation: In, values: [Backend]} 
+template:
+   metadata:
+      lables:
+         app:nginx-ReplicaSet
+         tier: Backend
+      labels:
+         app: App
+         
+   spec:
+      containers:
+      - name: Tomcat
+      image: tomcat: 8.0
+     

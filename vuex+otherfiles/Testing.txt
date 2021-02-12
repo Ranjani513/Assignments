@@ -1,0 +1,67 @@
+Create a new Project as ‘SeleniumTraining’ and add a new Java class file for the each given exercises and start automating the below:
+Practice Exercise 1:
+Launch a new Chrome browser.
+Open www.google.com
+Get Page Title name
+Print Page Title
+Get Page URL 
+Close the Browser
+Practice Exercise 2:
+Activate Internet Explorer driver module.
+Create an IE Webdriver instance.
+Launch Internet Explorer browser.
+Navigate to Google homepage.
+Validates the title text of the page.
+Practice Exercise 3:
+Open a Browser (write the generic code such that by changing the parameter browser can be changed.)
+Navigate to https://flipkart.com website.
+Write a method to find the count (number of) links on the homepage of Flipkart.
+Write another method to print link text and URLs of all the links on the page of Flipkart.
+
+
+
+
+Open a Chrome browser.
+Navigate to “http://www.fb.com”
+Verify that the page is redirected to “http://www.facebook.com”, by getting the current URL. (use if-else condition to verify this condition or use Assert.assertequals() in case you are familiar with TestNG or JUnit)
+Verify that there is a “Create an account” section on the page.
+Fill in the text boxes: First Name, Surname, Mobile Number or email address, “Re-enter mobile number”, new password.
+Update the date of birth in the drop-down.
+Select gender.
+Click on “Create an account”.
+Verify that the account is created successfully.
+Practice Exercise 5:
+Open any browser of your choice (Mozilla firefox, Chrome, Internet Explorer or Safari). Write the code in such a way that based on argument passed respective browser is selected.
+Browse to https://id.ebay.com/ website.
+Enter a product in the search box on the homepage (say Apple Watches).
+From categories dropdown, select category of your product (say Electronics).
+Click the Search button.
+Write a method to print the result of the product.
+
+
+
+
+
+
+
+
+
+
+
+http://www.dneonline.com/calculator.asmx?wsdl
+https://www.soapui.org/docs/scripting-and-properties/tips-tricks/
+
+
+http://dummy.restapiexample.com/
+
+try for localserver
+IN soapUI rest
+property transfer in soapui
+https://www.cuelogic.com/blog/postman-tutorial-for-automation
+
+https://petstore.swagger.io/
+
+https://reqres.in/api/users
+grovvy scrpipt
+random numbers
+change properties

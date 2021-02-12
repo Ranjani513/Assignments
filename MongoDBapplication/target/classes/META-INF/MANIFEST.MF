@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Implementation-Title: MongoDBapplication
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: bragaranjani
+Implementation-Vendor-Id: com.nisum.mongodb
+Build-Jdk: 1.8.0_251
+Implementation-URL: http://projects.spring.io/spring-boot/MongoDBappli
+ cation/
+Created-By: Maven Integration for Eclipse
+Implementation-Vendor: Pivotal Software, Inc.
+

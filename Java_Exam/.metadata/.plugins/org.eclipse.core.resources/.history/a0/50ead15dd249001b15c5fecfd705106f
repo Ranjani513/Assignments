@@ -1,0 +1,49 @@
+import java.util.*;
+import java.util.stream.Collectors;
+public class E {
+public static void main(String []args) {
+	//List<Object> list=Arrays.asList(1,5,6,'A');
+	//List<Object> res=list.stream().map(l->l=(int)l).filter(li->((int)li>1 && (int)li<190)).collect(Collectors.toList());
+	//res.stream().forEach(System.out::println);
+	Scanner sc=new Scanner(System.in);
+
+	System.out.println("enter the length of the array");
+	int length1=sc.nextInt();
+	char[] arr=new char[length1];
+	
+	int numbers[] = new int[length1];
+	char alpha[]=new char[length1];
+	int k=0;
+	int p=0;
+	System.out.println("enter the elements");
+		for(int j=0;j<length1;j++)
+	{
+		 arr[j]=sc.next().charAt(0);
+		
+	}
+	 
+	for(int i=0;i<length1;i++)
+	{
+		if((arr[i]>='A' && arr[i]<='Z'))
+		{
+			alpha[k]=arr[i];
+			k++;
+		}
+		else {
+			char ch=arr[i];
+			numbers[p]=ch;
+			p++;
+		}
+	}
+	
+	for(int l=0;l<alpha.length;l++)
+	{
+		System.out.println(alpha[l]);
+	}
+	for(int l=0;l<numbers.length;l++)
+	{
+		
+		System.out.println(numbers[l]);
+	}
+}
+}

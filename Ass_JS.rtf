@@ -1,0 +1,229 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Calibri;}}
+{\*\generator Riched20 10.0.18362}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\b\f0\fs22\lang9 1) var in1 = [1,2,3,4,5,6,1,2,3,4,5],\par
+in2 = [1,2,3,4,2,3,4,7,6,7,8,9]\par
+out = [1,2,3,4,5,6,7,8,9];\par
+A) \b0 in1 = [1,2,3,4,5,6,1,2,3,4,5],\par
+in2 = [1,2,3,4,2,3,4,7,6,7,8,9]\par
+in1=in1.concat(in2);\b\par
+\b0 let out=(...new Set(in1));\par
+console.log(out);\b\par
+2)var object = \{\par
+name:'NISUM',\par
+location: 'HYD'\par
+\}\par
+function ABC(a, b) \{\par
+// call the function and print the name and location.\par
+// OUTPUT: NISUM HYD hello world\par
+\}\par
+// try using call and apply methods.\par
+ABC('hello', 'world');\par
+-------------------------------------------\par
+\b0 <script>\par
+var object = \{\par
+name:'NISUM',\par
+location: 'HYD'\par
+\}\par
+function ABC(a, b) \{\par
+// call the function and print the name and location.\par
+\par
+document.getElementById("demo").innerHTML =object.name+"  "+object.location+" "+a+" "+b;\par
+\}\par
+// try using call and apply methods.\par
+ABC('hello', 'world');\par
+</script>\b\par
+\b0 // OUTPUT: NISUM HYD hello world\par
+\b with apply\par
+\b0 <script>\par
+var person = \{\par
+  fullName: function(a, b) \{\par
+    return this.firstName + " " + this.lastName + " " + a + " " + b;\par
+  \}\par
+\}\par
+var person1 = \{\par
+  firstName:"NISUM",\par
+  lastName: "HYD"\par
+\}\par
+var x = person.fullName.apply(person1, ["hello", "world"]); \par
+document.getElementById("demo").innerHTML = x; \par
+</script>\par
+------------------------------------------------------------------------------------------------------------------------\par
+\b 3) Write a function to find given number is palindrome or not?\par
+\b0 <script>\par
+var x=127;\par
+var y=x;\par
+var sum=0;\par
+while(x!=0)\par
+\{\par
+var rem=x%10;\par
+sum=(sum*10)+rem;\par
+x=parseInt(x/10);\par
+\par
+\}\par
+if(sum==y)\par
+\{\par
+document.getElementById("demo").innerHTML ="palindrome";\par
+\}\par
+else\par
+\{\par
+document.getElementById("demo").innerHTML ="not palindrome";\par
+\}\par
+</script>\par
+------------------------------------------------------------------------------------------------------------------------\par
+\b 4) var a = [1,2,3,4,5,6,1,2,3,4,5];\par
+var b = [1,2,3,4,5,1,2,3,4,5];\par
+Find middle element in an array of both the arrays?\par
+\b0 <script>\par
+var a = [1,2,3,4,5,6,1,2,3,4,5];\par
+var b = [1,2,3,4,5,1,2,3,4,5];\par
+var res1=parseInt(a.length /2);\par
+var res2=parseInt(b.length /2);\par
+document.getElementById("demo").innerHTML =a[res1] +" \\n"+b[res2];\par
+</script>\par
+------------------------------------------------------------------------------------------------------------------------\par
+\b 5) Write a program for call by value and call by reference.\par
+call By Value:\par
+\b0 let original=10;\par
+function func(originalval)\par
+\{\line originalval=originalval+10;\par
+console.log(originslval);//20\par
+\}\par
+console.log(func(10));//10\par
+\b Call By reference\b0\par
+var myobj=\{a:2\};\par
+function func(myobjval)\par
+\{\par
+myobjval.a=9;\par
+\}\par
+console.func(myobj);//9\par
+------------------------------------------------------------------------------------------------------------------------\par
+\b 6) Write an example of hosting to know the behavior of variables.\par
+A) \b0 Var:A variable can be declared even after used that variable.\par
+a="hello"\par
+console.log(a);------->hello\par
+var=a;\par
+Let and const: The block of code is aware of the variable, but it cannot be used until it has been declared.\par
+Using a let or const variable before it is declared will result in a ReferenceError.\par
+a="hello";\par
+console.log(a);------->error\par
+let a; \par
+---------------------------------------------------------------------------------------------------------------------\par
+\b 7) // I may pass String or Object or Array to function A\par
+// I need an output wt kind of datatype it is\par
+// example: if array - Array, if object - Object, if string - String\par
+\par
+function A(arg) \{\par
+\b0 console.log(typeof(arg));\par
+\b\}\par
+\b0 a="hello"\b\par
+A( \b0 a\b );\b0\par
+------------------------------------------------------------------------------------------------------------------------\par
+\b\par
+8. split even and odd elements of an Array into 2 sets. arr= [1,2,3,4,5,6,7,8,9,10] without using predefined methods of an Array.\par
+A) \b0 arr= [1,2,3,4,5,6,7,8,9,10] \par
+   var even=[];\par
+var odd=[];\par
+for(var i=0;i<arr.length;i++)\par
+\{\par
+  if(arr[i]%2==0)\par
+\{\par
+even.push(arr[i])\par
+\}\par
+else\par
+\{\par
+odd.push(arr[i]);\par
+\}\par
+\}\par
+console.log(even);\par
+console.log(odd);\par
+\b ------------------------------------------------------------------------------------------------------------------------9. Write a function that takes an array of strings, and returns an array of just the words that have even length.\par
+\b0 var arr=["hi","hello","how1","are","you","nisumitess"];\par
+var even=[];\par
+function eve(arr)\par
+\{\par
+for(var i=0;i<arr.length;i++)\par
+\{\par
+if(arr[i].length%2==0)\par
+\{\par
+even.push(arr[i]);\par
+\}\par
+\}\par
+console.log(even);\par
+\}\par
+eve(arr);\par
+------------------------------------------------------------------------------------------------------------------------\par
+\b 10. Sort array of elements without using predefined methods of an Array. i.e Arr = [30,20,1,11,5,10,15].\par
+A)  \b0 arr = [30,20,1,11,5,10,15];\par
+ for (var i = 0; i < arr.length; i++) \{     \par
+            for (var j = i+1; j < arr.length; j++) \{     \par
+               if(arr[i] > arr[j]) \{    \par
+                   temp = arr[i];    \par
+                   arr[i] = arr[j];    \par
+                   arr[j] = temp;    \par
+               \}     \par
+            \}     \par
+        \} ;console.log(arr);   \par
+-----------------------------------------------------------------------------------------------------------------------\par
+\b 11. Merge 2 objects to a single object without using predefined methods of an Object.\par
+   obj1 = \{ name: '...', age: '....', address: '.....'\}, obj2 = \{name: '....', dob: '.....', designation: '.......'\}.\par
+A)\b0 let obj1=\{name:'Ranjani',age:'21',address:'hyd'\};\par
+let obj2=\{name:'raga',dob:'dec',designation:'engineer'\};\par
+obj3=\{\};\par
+for(var att in obj1)\par
+\{\par
+obj3[att]=obj1[att];\par
+\}for(var att in obj2)\par
+\{\par
+obj3[att]=obj2[att];\par
+\}\par
+console.log(obj3);\b\par
+-----------------------------------------------------------------------------------------------------------------------\par
+12. Reverse the string without using predefined method of String class. Str = 'Hello Good Morning',\par
+A)\b0 str='Hello Good Morning';\par
+var rev='';\par
+for(var i=str.length-1;i>=0;i--)\par
+\{\par
+rev=rev+str.charAt(i);\par
+\}\par
+console.log(rev);\par
+\b ------------------------------------------------------------------------------------------------------------------------\par
+13. Want to display the images of the array in a carousel. In each carousel, we have to display 6 images but the array of the length is 10, need to display the images in a carousel as 1,2,3,4,5,6 in first carousel and 5,6,7,8,9,10. Write a logic to form new array so that array should contain arr= [1,2,3,4,5,6,5,6,7,8,9,10].\par
+A) \b0 let a=6;\par
+let len=10;\par
+let coursel1=[];\par
+let coursel2=[];\par
+for(var i=1;i<=a;i++)\par
+\{\par
+coursel1.push(i);\line\}\par
+let remaining=len-a;\par
+for(var j=remaining+1;j<=len;j++)\par
+\{\par
+coursel2.push(j);\par
+\}\par
+let res=[];\par
+res=res.concat(coursel1);\par
+res=res.concat(coursel2);\par
+console.log(res);\par
+\par
+\b 14. Filter and remove the repeated elements in an Array without using predefined methods. arr= [1,2,2,2,5,2,7,8,2,1,8,9].\par
+A)  \b0 arr= [1,2,2,2,5,2,7,8,2,1,8,9];\par
+    for(var i=0;i<arr.length;i++)\par
+\{\par
+for(var j=0;j<arr.length;j++)\par
+\{\par
+if(arr[i]==arr[j] && i!=j)\par
+break;\par
+\}\par
+if(j==arr.length)\par
+\{\par
+console.log(arr[i]);\par
+\}\par
+\}\par
+------------------------------------------------------------------------------------------------------------------------\par
+\b 15. what is the out of the below code .\par
+for (var i = 0; i < 5; i++) \{\par
+  setTimeout(function() \{ console.log(i); \}, i * 1000 );\par
+\}\par
+A) 5\par
+}
+ 

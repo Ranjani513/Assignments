@@ -1,0 +1,9 @@
+package com.nisum.EmployeeService;
+
+import com.nisum.Employee.Employee;
+
+public interface EmployeeService {
+ public void createEmployee(Employee emp);
+ public void UpdateEmployee(Employee emp);
+ public void DeleteEmployee(Employee emp);
+}

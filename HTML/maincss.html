@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS Example</title>
+	<link rel="stylesheet" href="cssex.css">
+	<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
+	<style>
+		img{
+			opacity:0.3;
+		}
+		.clearfix{
+			overflow:auto;
+		}
+	img:hover {
+  position: absolute;
+  left: 0px;
+ opacity:1.0;
+
+  z-index: -1;
+  margin:50px;
+ 
+}
+.c::first-line {
+  color: #ff0000;
+  font-variant: small-caps;
+  clear:"both";
+}
+.c1
+{
+	p::first-letter {
+  color: #ff0000;
+  font-size: xx-large;
+}
+}
+
+	</style>
+</head>
+
+<body>
+	
+<ul>
+  <li><a class="act" href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li class="dropdown">
+  	<a href="#about">About</a>
+  	 <!--<div class="dropdown-content">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>-->
+  </li>
+</ul>
+
+<h1> Css Combinators</h1>
+<div class="div1">
+<h2> 4 types Combinator</h2>
+
+	
+<div>
+	<p>Applying child selector  </p>
+	<section><p>Applying descendent selector</p></section>
+</div>
+<h4>Applying Adjacent selector</h4>
+<h5>Applying general Selector</h5>
+
+</div>
+<h1>Css Background</h1>
+<h2>Background-color with varying opacity</h2>
+	<p style="background-color:rgb(0,128,0,0.3);">Hello</p>
+	<p style="background-color:rgb(0,128,0,0.5);">Hello</p>
+	<p style="background-color:rgb(0,128,0,0.6);">Hello</p>
+	<h1>Css Background</h1>
+	<p style="border:2px dotted red">Hello</p>
+	<p style="border:1px solid  red;border-radius:10px;">Hello</p>
+	<h1>CSS Box model</h1>
+	<p>OUtline and outline-offset concepts are used along with box model.inline style applied for outline concepts</p>
+	<div class="boxmodel" style="outline:5px outset red; outline-offset:3px;">
+	<p  style="outline:5px outset red; outline-offset:3px;">OUtline and outline-offset concepts are used along with box model.inline style applied for outline concepts</p>
+	<h2>changing the direction if the text from right to left</h2>
+	<p style="direction:rtl; unicode-bidi: bidi-override;">OUtline and outline-offset concepts are used along with box model.inline style applied for outline concepts</p>
+	
+
+</div>
+<h2>TextShadow</h2>
+<p style="text-shadow:2px 2px;text-align:center;font-size:20px;background-color:rgb(0,111,0,0.4);width:50%;height:20%; ">Hello</p>
+<p style="text-shadow:2px 2px red;text-align:center;font-size:20px;background-color:rgb(0,111,0,0.4);width:50%;height:20%; ">Hello</p>
+<p style="text-shadow:2px 2px 6px blue;text-align:center;font-size:20px;background-color:rgb(0,111,0,0.4);width:50%;height:20%;cursor:pointer; ">Hello</p>
+<h1>CSS Display</h1>
+<p style="display:block;background-color:maroon;color:white;text-align:center;">hello</p>
+<p style="display:inline;background-color:maroon;color:white;text-align:center;">hello</p>
+<p style="display:none;background-color:maroon;color:white;text-align:center;">hello</p>
+<h1>CSS position</h1>
+<div style="position:relative;border:2px solid red;width:400px;height:200px">
+<h6 >using position concept</h6>
+<h6 style="position:absolute;border:2px solid red;width:200px;height:100px;">using position concept</h6>
+</div>
+
+<h1>PSeudo elements</h1>
+<div class="c">
+<p>You can use the ::first-line pseudo-element to add a special effect to the first line of a text. Some more text. And even more, and more, and more, and more, and more, and more, and more, and more, and more, and more, and more, and more.</p>
+<img src="nisum.png" alt="nisum" width:200px class="clearfix"
+  height:200px style="border:5px solid red">
+<p style="color:red" class="c1">Because the image has a z-index of -1, it will be placed behind the text.</p>
+</div>
+</body>
+</html>
